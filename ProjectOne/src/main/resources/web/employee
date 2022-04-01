@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Expense Reimbursement System</title>
+    <script src = "scripts/myscripts.js"></script>
+    <link rel="stylesheet" href="css/mycss.css">
+
+</head>
+<body>
+    <header>Expense Reimbursement System</header>
+    <h2>Login Portal</h2>
+    TEST TEST TEST
+            </body>
+<footer>
+    Hi! I'm a footer.
+</footer>
+</html>
