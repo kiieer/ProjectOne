@@ -1,0 +1,53 @@
+h2 {
+    color:black;
+    display: inline-block;
+}
+
+#wrapper{
+	background-color: #facbc1;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	min-width: 700px;
+	max-width: 1024px;
+    overflow: visible;
+}
+
+#text {
+    padding: 2%;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: radial-gradient(#ffeae3 20%, transparent 20%),
+      radial-gradient(#fff8f5 20%, transparent 20%);
+  background-color: #feefeb;
+  background-position: 0 0, 50px 50px;
+  background-size: 100px 100px;
+}
+
+header {
+    text-align: center;
+    overflow: visible;
+}
+
+header, footer {
+    background-color: #fbb2a3;
+}
+
+#login {
+    background-color: #fc9084;
+    border: none;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    float: right;
+}
+
+#peach {
+    overflow: visible;
+    padding-top: 1%;
+    float: left;
+}

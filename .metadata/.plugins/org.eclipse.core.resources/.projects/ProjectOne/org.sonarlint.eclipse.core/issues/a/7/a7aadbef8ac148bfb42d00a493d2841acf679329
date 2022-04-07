@@ -1,0 +1,11 @@
+
+X
+java:S1481	"(Remove this unused "app" local variable.(Ö¶´üÿÿÿÿH7RMINORZ
+CODE_SMELL
+g
+java:S1854	"7Remove this useless assignment to local variable "app".(Ö¶´üÿÿÿÿH9RMAJORZ
+CODE_SMELL
+W
+java:S1602
+",Remove useless curly braces around statement(û†ƒÙH6RMINORZ
+CODE_SMELL
