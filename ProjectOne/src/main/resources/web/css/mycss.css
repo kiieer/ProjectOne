@@ -4,7 +4,7 @@ h2 {
 }
 
 #wrapper{
-    background-image: linear-gradient(#729fda, #6fa0e0,  #386cb8);
+    background-image: linear-gradient(#729fda,#6fa0e0, #386cb8);
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
@@ -21,7 +21,7 @@ h2 {
 	width: 350px; height:  100px;
 	text-align: center;
 	background: #f2f9fe;
-	background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: linear-gradient(to top, #f2f9fe 5%, #d6f0fd 100%);
 	background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
 	background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
 	background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
