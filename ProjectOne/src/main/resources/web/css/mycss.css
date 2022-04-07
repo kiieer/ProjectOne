@@ -64,8 +64,8 @@ h2 {
 #faq {
     overflow: auto;
     height: 223px;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    font-size: 13px;
+    font-weight: bold;
 }
 
 body {
@@ -118,6 +118,21 @@ footer {
     width: 100%;
 }
 
-#text:webkit-scrollbar {
-    display: none;
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #e4fcffa5;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #7eb6ff;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #729fda;
   }

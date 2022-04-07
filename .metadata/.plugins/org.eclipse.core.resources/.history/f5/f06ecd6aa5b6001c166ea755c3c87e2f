@@ -48,7 +48,7 @@
 <body><div id="wrapper">
     <header>
         <img src="images/canvaicon.png" id="sunny">
-        <div class="cloud"><br><h3 class="font-effect-shadow-multiple">Employee Expense Claim</h3>
+        <div class="cloud"><br><h3 class="font-effect-shadow-multiple">Employee Expense Claim<h3>
         </div></header>
         <div id="buttons"><button type="button" onclick="home()" class="button">Home</button>
             <button type="button" onclick="faq()" class="button">FAQ</button>

@@ -21,3 +21,8 @@ function home() {
 ' </p>';
     document.getElementById("text").innerHTML = indexBlock;
 }
+
+function login() {
+    var loginBlock = '<div class="alert alert-primary" role="alert" id="alert"><h3>loading...</h3></div><img src="images/canvaicon.png" id="spin">';
+    document.getElementById("text").innerHTML = loginBlock;
+}
