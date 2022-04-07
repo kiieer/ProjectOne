@@ -1,5 +1,4 @@
 h2 {
-    color:black;
     display: inline-block;
 }
 
@@ -8,7 +7,6 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
-    margin-top: 8%;
 	min-width: 750px;
 	max-width: 900px;
     height: 40%;
@@ -58,9 +56,16 @@ h2 {
 	-moz-border-radius: 200px;
 }
 
-.text {
+#text {
     text-align: center;
     letter-spacing: 1px;
+}
+
+#faq {
+    overflow: auto;
+    height: 223px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 body {
@@ -112,3 +117,7 @@ footer {
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), #5f8cc692, #5f8cc692, #5f8cc692);
     width: 100%;
 }
+
+#text:webkit-scrollbar {
+    display: none;
+  }
