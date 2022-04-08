@@ -1,11 +1,11 @@
 
 W
 java:S1602
-",Remove useless curly braces around statement(û†ƒÙH^RMINORZ
-CODE_SMELL
-X
-java:S1481	"(Remove this unused "app" local variable.(Ö¶´üÿÿÿÿH_RMINORZ
+",Remove useless curly braces around statement(û†ƒÙHdRMINORZ
 CODE_SMELL
 g
-java:S1854	"7Remove this useless assignment to local variable "app".(Ö¶´üÿÿÿÿHaRMAJORZ
+java:S1854	"7Remove this useless assignment to local variable "app".(Ö¶´üÿÿÿÿHeRMAJORZ
+CODE_SMELL
+X
+java:S1481	"(Remove this unused "app" local variable.(Ö¶´üÿÿÿÿHfRMINORZ
 CODE_SMELL

@@ -1,0 +1,15 @@
+package com.revature.pctc.handlers;
+
+import com.revature.project.one.entities.Employee;
+
+import io.javalin.http.Handler;
+
+public class EmployeeController {
+	
+	public static Handler login = ctx-> {
+	Employee empObj = ctx.bodyAsClass(Employee.class);
+	Employee login = service.loginEmployee(empObj);
+	ctx.json(login);
+	};
+	
+}

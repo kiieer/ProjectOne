@@ -11,8 +11,7 @@ h2 {
 	max-width: 900px;
     height: 40%;
     border-radius: 100px 100px 100px 100px; 
-    box-shadow: 5px 5px rgba(136, 136, 136, 0.3); 
-    
+    box-shadow: 5px 5px rgba(136, 136, 136, 0.3);   
 }
 
 .cloud {

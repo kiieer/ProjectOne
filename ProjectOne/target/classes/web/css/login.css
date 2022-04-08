@@ -1,0 +1,66 @@
+#login {
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0;
+    position: relative;
+    max-width: 900px;
+}
+input {
+    width: 100%;
+    padding: 11px 28px;
+    margin: 14px 3;
+    background-color: #79a7e2;
+    color: black;
+    border: none;
+    border-radius: 100px 100px 100px 100px; 
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+label {
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #2f5298;
+}
+
+#pass {
+    padding-top: 1%;
+}
+
+#loginalert {
+    text-align: center;
+}
+
+#loginbtn {
+    background-color: #40659692;
+    border: none;
+    color: white;
+    padding: 1%;
+    margin-top: 1px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 60%;
+}
+
+#loginbtn:hover {
+    background-color: #101d2f3d;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, 0.604);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(255, 255, 255, 0.604);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(255, 255, 255, 0.604);
+  }

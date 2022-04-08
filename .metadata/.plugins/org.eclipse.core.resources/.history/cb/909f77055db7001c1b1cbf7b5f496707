@@ -1,0 +1,7 @@
+package com.revature.pctc.handlers;
+
+public class EmployeeController {
+	Employee empObj = ctx.bodyAsClass(Employee.class);
+	
+	
+}

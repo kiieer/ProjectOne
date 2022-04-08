@@ -1,0 +1,55 @@
+var url = "http://localhost:8080/"
+
+async function loginFunction(username, pass) {
+	let username1 = { username: username, pass: pass};
+	
+	var element = document.querySelector('#alert');
+    var copy = element.cloneNode(true);
+    copy.id = 'loadingalert';
+	copy.className = 'alert alert-primary';
+    copy.innerHTML = '<img src="images/canvaicon.png" width="20%" id="spin">';
+   	element.replaceWith(copy);
+    setTimeout(loginpage, 300);
+	
+	let response = await fetch(url + 'login', {
+		method: 'POST',
+		headers: {'Content-Type': 'application/json'},
+		body: JSON.stringify(username1)});
+		let result = await response.json();
+		console.log(result.username);
+		if (result.username === null) {
+			    var element = document.querySelector('#loadingalert');
+			    var copy = element.cloneNode(true);
+			    copy.id = 'loginalert';
+			    copy.className = 'alert alert-danger';
+			    copy.innerHTML = '<h3><i>Alert: login was unsuccessful. Try again.</i></h3>';
+			    element.replaceWith(copy);
+			}
+			else {
+				alert("Functional")
+			}
+	}
+
+function getInput() {
+	let username = document.getElementById("user").value
+	let pass = document.getElementById("password").value
+	loginFunction(username, pass);
+}
+
+
+function wrongInput() {
+    var element = document.querySelector('#alert');
+    var copy = element.cloneNode(true);
+    copy.id = 'loginalert';
+    copy.className = 'alert alert-danger';
+    copy.innerHTML = '<h3><i>Alert: login was unsuccessful. Try again.</i></h3>';
+    element.replaceWith(copy);
+}
+
+function loginLoading() {
+	var element = document.querySelector('#alert');
+    var copy = element.cloneNode(true);
+    copy.innerHTML = '<img src="images/canvaicon.png" id="spin">';
+   	element.replaceWith(copy);
+    setTimeout(loginpage, 300);
+}

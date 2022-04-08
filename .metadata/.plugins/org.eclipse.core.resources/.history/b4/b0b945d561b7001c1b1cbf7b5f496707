@@ -1,0 +1,37 @@
+const url = "http://localhost:8080/"
+
+async function loginFunction(username, password) {
+	let username1 = {
+		username: username,
+		password: pass
+	};
+	
+	let response = await fetch(url, {
+		method: post,
+		headers: {'Content-Type': 'application/json'},
+		body: JSON.stringify(username1)});
+		console.log(result.username);
+		if (result.username === null) {
+			alert("Resubmit")
+			wrongInput()
+			}
+			else {
+				alert("Functional")
+			}
+	}
+
+function getInput() {
+	let username = document.getElementById("user").value
+	let pas = document.getElementById("pass").value
+	loginFunction(username, pass);
+}
+
+
+function wrongInput() {
+    var element = document.querySelector('#alert');
+    var copy = element.cloneNode(true);
+    copy.id = 'loginalert';
+    copy.className = 'alert alert-danger';
+    copy.innerHTML = '<h3><i>Alert: login was unsuccessful. Try again.</i></h3>';
+    element.replaceWith(copy);
+}

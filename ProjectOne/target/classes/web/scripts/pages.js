@@ -23,6 +23,17 @@ function home() {
 }
 
 function login() {
-    var loginBlock = '<div class="alert alert-primary" role="alert" id="alert"><h3>loading...</h3></div><img src="images/canvaicon.png" id="spin">';
+    var loginBlock = '<div class="alert alert-primary" role="alert" id="alert"><h3>loading...</h3></div><img src="images/canvaicon.png" width="15%" id="spin">';
     document.getElementById("text").innerHTML = loginBlock;
+    setTimeout(loginpage, 500);
+}
+
+function loginpage() {
+    var loginPageBlock = '<div class="alert alert-primary" role="alert" id="alert"><h3>Login Page</h3></div>' +
+    '<p id="login"><label>Username: &nbsp; </label><br>' +
+    '<input id = "user" type="text" placeholder="enter username..." name="username" required>' +
+    '<label id="pass">Password: &nbsp;</label><br>' +
+    '<input id = "password" type="password" placeholder="enter password..." name="username" required></p>' +
+    '<button type="submit" onclick="getInput()" id="loginbtn">Login</button>';
+    document.getElementById("text").innerHTML = loginPageBlock;
 }
