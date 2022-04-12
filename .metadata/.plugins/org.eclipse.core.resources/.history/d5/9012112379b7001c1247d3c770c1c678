@@ -1,0 +1,22 @@
+package com.revature.project.one.utils;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import io.netty.util.internal.SystemPropertyUtil;
+
+public class ConnUtil {
+	private static String url = System.getenv("PROJ_ONE");
+	private static ConnUtil conn=new ConnUtil();
+	
+	private ConnUtil() {}
+	
+	public static Connection getInstance() {
+		if(conn==null) {
+			conn= DriverManager.getConnection(url);
+		}
+	}
+	
+	
+    }

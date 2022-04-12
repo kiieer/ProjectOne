@@ -1,11 +1,5 @@
 
-W
-java:S1602
-",Remove useless curly braces around statement(û†ƒÙHdRMINORZ
+p	java:S106"9Replace this use of System.out or System.err by a logger.(æœ–‚ùÿÿÿÿ8†å›Ö€0HÉRMAJORZ
 CODE_SMELL
-g
-java:S1854	"7Remove this useless assignment to local variable "app".(Ö¶´üÿÿÿÿHeRMAJORZ
-CODE_SMELL
-X
-java:S1481	"(Remove this unused "app" local variable.(Ö¶´üÿÿÿÿHfRMINORZ
+p	java:S106"9Replace this use of System.out or System.err by a logger.(ÎØø¥ıÿÿÿÿ8†å›Ö€0HÊRMAJORZ
 CODE_SMELL

@@ -10,12 +10,14 @@ import com.revature.project.one.entities.Employee;
 import com.revature.project.one.utils.ConnUtil;
 
 public class EmpDAOPostgres implements EmpDAO {
-
+	
+	static Connection conn = ConnUtil.getInstance();
+	
 	@Override
 	public Employee login(Employee empObj) {
 		// TODO Auto-generated method stub
 		Employee localEmp = new Employee();
-		try (Connection conn = ConnUtil.createConnection();) {
+		try {
 			PreparedStatement ptsmt = conn.prepareStatement("select * from employees");
 			ResultSet rs = ptsmt.executeQuery();
 			String eusername = empObj.getUsername();
@@ -25,9 +27,12 @@ public class EmpDAOPostgres implements EmpDAO {
 				int id = rs.getInt("id");
 				String password = rs.getString("pass");
 				String username = rs.getString("username");
+				String type = rs.getString("emptype");
 				if (eusername.equals(username) && epass.equals(password)) {
+					localEmp.setId(id);
 					localEmp.setUsername(eusername);
 					localEmp.setPass(epass);
+					localEmp.setType(type);
 					break;
 				}
 			}

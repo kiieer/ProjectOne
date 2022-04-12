@@ -4,4 +4,21 @@
     <fullyQualifiedTypeName name="io.javalin.http.staticfiles.Location"/>
     <fullyQualifiedTypeName name="java.util.logging.LogManager"/>
     <fullyQualifiedTypeName name="java.lang.System.Logger"/>
+    <fullyQualifiedTypeName name="io.javalin.http.Handler"/>
+    <fullyQualifiedTypeName name="com.revature.pctc.handlers.EmployeeController"/>
+    <fullyQualifiedTypeName name="com.revature.project.one.entities.Employee"/>
+    <fullyQualifiedTypeName name="org.eclipse.jetty.client.api.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="com.revature.project.one.dao.EmpDAO"/>
+    <fullyQualifiedTypeName name="com.revature.project.one.dao.EmpDAOPostgres"/>
+    <fullyQualifiedTypeName name="com.revature.project.one.service.EmpSInterface"/>
+    <fullyQualifiedTypeName name="com.revature.project.one.service.EmpService"/>
+    <fullyQualifiedTypeName name="io.netty.util.internal.SystemPropertyUtil"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="com.revature.project.one.utils.ConnUtil"/>
+    <fullyQualifiedTypeName name="com.revature.project.one.entities.Manager"/>
+    <fullyQualifiedTypeName name="com.revature.project.one.utils.LoginUtil"/>
 </qualifiedTypeNameHistroy>

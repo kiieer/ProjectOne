@@ -1,0 +1,7 @@
+
+r
+java:S1118":Add a private constructor to hide the implicit public one.(ü¸œÃşÿÿÿÿ8ô©ŞÑ0H½RMAJORZ
+CODE_SMELL
+
+java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "conn".(­æıò8ô©ŞÑ0H¾RMINORZ
+CODE_SMELL

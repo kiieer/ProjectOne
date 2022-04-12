@@ -1,9 +1,0 @@
-
-function getInput() {
-    var element = document.querySelector('#alert');
-    var copy = element.cloneNode(true);
-    copy.id = 'loginalert';
-    copy.className = 'alert alert-danger';
-    copy.innerHTML = '<h3><i>Alert: login was unsuccessful. Try again.</i></h3>';
-    element.replaceWith(copy);
-}

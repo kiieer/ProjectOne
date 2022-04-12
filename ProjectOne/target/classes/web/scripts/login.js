@@ -2,6 +2,7 @@ var url = "http://localhost:8080/"
 
 async function loginFunction(username, pass) {
 	let username1 = { username: username, pass: pass};
+	sessionStorage.setItem("user", username1);
 	
 	//spinny boy
 	var element = document.querySelector('#alert');
@@ -9,7 +10,6 @@ async function loginFunction(username, pass) {
 	copy.className = 'alert alert-primary';
     copy.innerHTML = '<img src="images/canvaicon.png" width="7%" id="spin">';
    	element.replaceWith(copy);
-    setTimeout(loginpage, 300);
 	
 	let response = await fetch(url + 'login', {
 		method: 'POST',
@@ -25,11 +25,13 @@ async function loginFunction(username, pass) {
 			    copy.className = 'alert alert-danger';
 			    copy.innerHTML = '<h3><i>Alert: login was unsuccessful. Try again.</i></h3>';
 			    element.replaceWith(copy);
-			    element.setAttribute("style", "background-color: green;");
-			    //setTimeout(loginpage, 3000);
+			    
+			} else {
+				if (result.type == "manager") {
+				window.location.href="/rimbm.html";
+			} else {
+				window.location.href="/rimbe.html";
 			}
-			else {
-				alert("Functional")
 			}
 	}
 
@@ -47,4 +49,8 @@ function loginpage() {
     '<input id = "password" type="password" placeholder="enter password..." name="username" required></p>' +
     '<button type="submit" onclick="getInput()" id="loginbtn">Login</button>';
     document.getElementById("text").innerHTML = loginPageBlock;
+}
+
+function logout() {
+	window.location.href="http://localhost:8080/";
 }

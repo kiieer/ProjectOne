@@ -1,0 +1,27 @@
+package com.revature.project.one.utils;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class ConnUtil {
+	private static String url = System.getenv("PROJ_ONE");
+	private static Connection conn = DriverManager.getConnection(url);
+	
+	private ConnUtil() {
+	}
+	
+	public static Connection getInstance() {
+		return conn;
+	}
+	
+//    public static Connection createConnection() {
+//        String url = System.getenv("PROJ_ONE");
+//        try {
+//            Connection conn = DriverManager.getConnection(url);
+//            return conn;
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//            return null;
+//        }
+    }
