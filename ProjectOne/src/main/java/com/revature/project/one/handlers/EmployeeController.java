@@ -17,4 +17,20 @@ public class EmployeeController {
 	ctx.json(login);
 	};
 	
+	public static Handler getallEmployees = ctx-> {
+		
+	};
+	
+	public static Handler getallReimbursements= ctx-> {
+		
+	};
+	
+	public static Handler createReimbursement = ctx-> {
+			
+	};
+	
+	public static Handler manageReimbursement = ctx-> {
+		
+	};
+	
 }

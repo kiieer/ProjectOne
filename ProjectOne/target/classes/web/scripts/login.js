@@ -2,7 +2,8 @@ var url = "http://localhost:8080/"
 
 async function loginFunction(username, pass) {
 	let username1 = { username: username, pass: pass};
-	sessionStorage.setItem("user", username1);
+	sessionStorage.setItem("username", username);
+	sessionStorage.setItem("userObj", username1);
 	
 	//spinny boy
 	var element = document.querySelector('#alert');
@@ -51,6 +52,15 @@ function loginpage() {
     document.getElementById("text").innerHTML = loginPageBlock;
 }
 
+function test() {
+	let userObj = sessionStorage.getItem("userObj");
+	let username = sessionStorage.getItem("username");
+	alert(username);
+	alert(userObj);
+
+}
+
 function logout() {
+	sessionStorage.clear();
 	window.location.href="http://localhost:8080/";
 }

@@ -1,10 +1,10 @@
 
 T
-java:S3010"!Remove this assignment of "conn".(¸¢ìâ8¢ÑØÖ€0HÍRMAJORZ
-CODE_SMELL
-x
-java:S1128"FRemove this unused import 'io.netty.util.internal.SystemPropertyUtil'.(üË£v8ô©ÒÖ€0HÏRMINORZ
+java:S3010"!Remove this assignment of "conn".(¸¢ìâ8¢ÑØÖ€0H‹RMAJORZ
 CODE_SMELL
 ^
-java:S1068"&Remove this unused "cu" private field.(¤ÒŒøÿÿÿÿ8ß­ŞÖ€0HÑRMAJORZ
+java:S1068"&Remove this unused "cu" private field.(¤ÒŒøÿÿÿÿ8ß­ŞÖ€0H‡RMAJORZ
+CODE_SMELL
+x
+java:S1128"FRemove this unused import 'io.netty.util.internal.SystemPropertyUtil'.(üË£v8ô©ÒÖ€0H‰RMINORZ
 CODE_SMELL

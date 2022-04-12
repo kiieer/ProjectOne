@@ -27,8 +27,6 @@ W
 'src/main/resources/web/scripts/login.js,d\7\d78c985a256c3076a09a47587edafcdb8608cc36
 n
 >src/main/java/com/revature/project/one/dao/EmpDAOPostgres.java,a\7\a7458c7b42dcaa86e026af19188c748376b99da3
-O
-src/main/resources/web/employee,4\f\4f5d58a9ef5cd1e8dd595cff025aaadc7da517c5
 w
 Gsrc/main/java/com/revature/project/one/handlers/EmployeeController.java,2\9\29d6a67ece81cf36e38243e18ab89c4afe74a5c9
 Q
@@ -41,3 +39,9 @@ Z
 *src/main/resources/web/scripts/employee.js,0\d\0d26f0c101ca9550cb81c0df11b27c379c1313f2
 q
 Asrc/main/java/com/revature/project/one/service/EmpSInterface.java,9\0\903c3fc7b959b981e430320e66f34da6416ea700
+Q
+!src/main/resources/web/rimbm.html,0\6\065530edd4a1c1289471f8a782888fca8cff4bc8
+Y
+)src/main/resources/web/scripts/manager.js,1\4\1499388ea7ee09239fe9ed191f741a1ded01db15
+r
+Bsrc/main/java/com/revature/project/one/entities/Reimbursement.java,f\6\f697fda4d500383595275b87809478ad2934d4f3
