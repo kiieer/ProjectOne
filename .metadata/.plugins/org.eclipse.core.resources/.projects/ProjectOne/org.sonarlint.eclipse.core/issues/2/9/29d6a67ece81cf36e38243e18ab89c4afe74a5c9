@@ -1,21 +1,52 @@
 
-i	java:S106"9Replace this use of System.out or System.err by a logger.(ÔÔÕ“şÿÿÿÿHÂRMAJORZ
-CODE_SMELL
-f
-java:S1118	":Add a private constructor to hide the implicit public one.(ÈÅğªHÄRMAJORZ
-CODE_SMELL
 \
-java:S1444"+Make this "public static login" field final(©øÌ±ÿÿÿÿÿHÆRMINORZ
-CODE_SMELL
-j
-java:S1117"9Rename "login" which hides the field declared at line 12.(ô•à„ùÿÿÿÿHÃRMAJORZ
-CODE_SMELL
-‚
-java:S1104"QMake login a static final constant or non-public and provide accessors if needed.(©øÌ±ÿÿÿÿÿHÅRMINORZ
+java:S1444"+Make this "public static login" field final(©øÌ±ÿÿÿÿÿH›
+RMINORZ
 CODE_SMELL
 ˜
-java:S1104"`Make getallReimbursements a static final constant or non-public and provide accessors if needed.(Üè“ÿÿÿÿÿ8¤ë¾ç0HãRMINORZ
+java:S1104"`Make getallReimbursements a static final constant or non-public and provide accessors if needed.(Üè“ÿÿÿÿÿ8¤ë¾ç0Hœ
+RMINORZ
+CODE_SMELL
+q
+java:S1444"9Make this "public static createReimbursement" field final(€Ùûêÿÿÿÿÿ8ñüè0H
+RMINORZ
+CODE_SMELL
+f
+java:S1118	":Add a private constructor to hide the implicit public one.(ÈÅğªH
+RMAJORZ
 CODE_SMELL
 r
-java:S1444":Make this "public static getallReimbursements" field final(Üè“ÿÿÿÿÿ8¤ë¾ç0HäRMINORZ
+java:S1444":Make this "public static getallReimbursements" field final(Üè“ÿÿÿÿÿ8¤ë¾ç0HŸ
+RMINORZ
+CODE_SMELL
+l
+java:S1444 "9Make this "public static manageReimbursement" field final(øü”¥8ñüè0H 
+RMINORZ
+CODE_SMELL
+h
+java:S1444"5Make this "public static getallEmployees" field final(öò¨¬8ñüè0H¡
+RMINORZ
+CODE_SMELL
+i	java:S106"9Replace this use of System.out or System.err by a logger.(ÔÔÕ“şÿÿÿÿH¢
+RMAJORZ
+CODE_SMELL
+‚
+java:S1104"QMake login a static final constant or non-public and provide accessors if needed.(©øÌ±ÿÿÿÿÿH£
+RMINORZ
+CODE_SMELL
+—
+java:S1104"_Make createReimbursement a static final constant or non-public and provide accessors if needed.(€Ùûêÿÿÿÿÿ8ñüè0H¤
+RMINORZ
+CODE_SMELL
+
+java:S1104"[Make getallEmployees a static final constant or non-public and provide accessors if needed.(öò¨¬8ñüè0H¥
+RMINORZ
+CODE_SMELL
+j
+java:S1117"9Rename "login" which hides the field declared at line 12.(ô•à„ùÿÿÿÿH¦
+RMAJORZ
+CODE_SMELL
+’
+java:S1104 "_Make manageReimbursement a static final constant or non-public and provide accessors if needed.(øü”¥8ñüè0H§
+RMINORZ
 CODE_SMELL

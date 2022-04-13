@@ -1,5 +1,7 @@
 package com.revature.project.one.handlers;
 
+import java.util.List;
+
 import com.revature.project.one.entities.Employee;
 import com.revature.project.one.service.EmpSInterface;
 import com.revature.project.one.service.EmpService;
@@ -17,11 +19,12 @@ public class EmployeeController {
 	ctx.json(login);
 	};
 	
-	public static Handler getallEmployees = ctx-> {
-		
+	public static Handler getAllEmployees = ctx-> {
+		List<Employee> eList = service.getAllEmployees();
+		ctx.json(eList);
 	};
 	
-	public static Handler getallReimbursements= ctx-> {
+	public static Handler getAllReimbursements= ctx-> {
 		
 	};
 	

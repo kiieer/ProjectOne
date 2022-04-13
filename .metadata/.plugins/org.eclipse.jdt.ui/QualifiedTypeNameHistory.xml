@@ -21,4 +21,5 @@
     <fullyQualifiedTypeName name="com.revature.project.one.utils.ConnUtil"/>
     <fullyQualifiedTypeName name="com.revature.project.one.entities.Manager"/>
     <fullyQualifiedTypeName name="com.revature.project.one.utils.LoginUtil"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
 </qualifiedTypeNameHistroy>

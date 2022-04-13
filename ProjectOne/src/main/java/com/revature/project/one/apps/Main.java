@@ -15,6 +15,6 @@ public static void main(String[] args) {
 	app.before(ctx -> ctx.header("Access-Control-Allow-Credentials", "true"));
 
 	app.post("/login", EmployeeController.login);
-	
+	app.get("/fetchemps", EmployeeController.getAllEmployees);
 }
 }

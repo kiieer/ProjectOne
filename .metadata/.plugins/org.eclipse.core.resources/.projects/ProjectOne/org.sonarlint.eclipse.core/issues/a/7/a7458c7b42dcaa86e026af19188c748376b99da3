@@ -1,9 +1,12 @@
 
-v
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(öœÀH•RBLOCKERZBUG
 b
-java:S1135("2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿH“RINFOZ
+java:S1135("2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿH˜
+RINFOZ
 CODE_SMELL
+v
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(öœÀH™
+RBLOCKERZBUG
 b
-java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿH”RINFOZ
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿHš
+RINFOZ
 CODE_SMELL

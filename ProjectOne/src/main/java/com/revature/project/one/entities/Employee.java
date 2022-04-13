@@ -10,6 +10,13 @@ public class Employee {
 		super();
 	}
 
+	public Employee(int id, String username, String type) {
+		super();
+		this.id = id;
+		this.username = username;
+		this.type = type;
+	}
+
 	public Employee(int id, String username, String pass, String type) {
 		super();
 		this.id = id;

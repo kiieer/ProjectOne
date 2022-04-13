@@ -1,16 +1,4 @@
 
-^
-java:S1068"&Remove this unused "id" private field.(ôç¼Óşÿÿÿÿ8„ô¾ç0HêRMAJORZ
-CODE_SMELL
-a
-java:S1068")Remove this unused "empId" private field.(Âã«ÿÿÿÿÿ8„ô¾ç0HìRMAJORZ
-CODE_SMELL
-\
-java:S1068")Remove this unused "manId" private field.(ûæ±É8„ô¾ç0HîRMAJORZ
-CODE_SMELL
-`
-java:S1068"(Remove this unused "type" private field.(–î†ûÿÿÿÿ8„ô¾ç0HğRMAJORZ
-CODE_SMELL
-`
-java:S1068"(Remove this unused "desc" private field.(ïºğ¢ûÿÿÿÿ8„ô¾ç0HòRMAJORZ
+x	java:S107"AConstructor has 9 parameters, which is greater than 7 authorized.(Ä·ßşùÿÿÿÿ8æ¡ÿç0H®
+RMAJORZ
 CODE_SMELL
