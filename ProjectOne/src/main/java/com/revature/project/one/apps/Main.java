@@ -16,5 +16,7 @@ public static void main(String[] args) {
 
 	app.post("/login", EmployeeController.login);
 	app.get("/fetchemps", EmployeeController.getAllEmployees);
+	app.get("/fetchreim", EmployeeController.getAllReimbursements);
+	app.post("/makereim", EmployeeController.createReimbursement);
 }
 }

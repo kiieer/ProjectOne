@@ -7,28 +7,34 @@ public class Reimbursement {
 	private int empId;
 	private int manId;
 	private String type;
+	private int amount;
 	private String desc;
-	private LocalDate submit;
-	private LocalDate resolve;
+	private String submit;
+	private String resolve;
 	private boolean resolved;
 	private boolean accepted;
 	
 	public Reimbursement() {
 		super();
 	}
-	public Reimbursement(int id, int empId, int manId, String type, String desc, LocalDate submit, LocalDate resolve,
-			boolean resolved, boolean accepted) {
+	
+	public Reimbursement(int id, int empId, int manId, String type, int amount, String desc, String submit,
+			String resolve, boolean resolved, boolean accepted) {
 		super();
 		this.id = id;
 		this.empId = empId;
 		this.manId = manId;
 		this.type = type;
+		this.amount = amount;
 		this.desc = desc;
 		this.submit = submit;
 		this.resolve = resolve;
 		this.resolved = resolved;
 		this.accepted = accepted;
 	}
+
+
+
 	public int getId() {
 		return id;
 	}
@@ -59,16 +65,16 @@ public class Reimbursement {
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
-	public LocalDate getSubmit() {
+	public String getSubmit() {
 		return submit;
 	}
-	public void setSubmit(LocalDate submit) {
+	public void setSubmit(String submit) {
 		this.submit = submit;
 	}
-	public LocalDate getResolve() {
+	public String getResolve() {
 		return resolve;
 	}
-	public void setResolve(LocalDate resolve) {
+	public void setResolve(String resolve) {
 		this.resolve = resolve;
 	}
 	public boolean isResolved() {
@@ -84,12 +90,19 @@ public class Reimbursement {
 		this.accepted = accepted;
 	}
 	
+	
+	public int getAmount() {
+		return amount;
+	}
+
+	public void setAmount(int amount) {
+		this.amount = amount;
+	}
+
 	@Override
 	public String toString() {
-		return "Reimbursement [id=" + id + ", empId=" + empId + ", manId=" + manId + ", type=" + type + ", desc=" + desc
-				+ ", submit=" + submit + ", resolve=" + resolve + ", resolved=" + resolved + ", accepted=" + accepted
-				+ "]";
+		return "Reimbursement [id=" + id + ", empId=" + empId + ", manId=" + manId + ", type=" + type + ", amount="
+				+ amount + ", desc=" + desc + ", submit=" + submit + ", resolve=" + resolve + ", resolved=" + resolved
+				+ ", accepted=" + accepted + "]";
 	}
-	
-	
 }
