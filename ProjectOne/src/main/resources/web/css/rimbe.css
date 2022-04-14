@@ -10,23 +10,24 @@ h2 {
     margin-top: 3%;
     overflow: hidden;
 	min-width: 750px;
-	max-width: 1200px;
+	max-width: 1000px;
     border-radius: 100px 100px 100px 100px; 
     box-shadow: 5px 5px rgba(136, 136, 136, 0.3);   
 }
 
 
 #text {
-    text-align: center;
-    padding: 7%;
     letter-spacing: 1px;
 }
 
-#faq {
-    overflow: auto;
-    height: 223px;
-    font-size: 13px;
-    font-weight: bold;
+.create {
+    letter-spacing: 1px;
+    padding-left: 3%;
+}
+
+#test {
+	padding-left: 5%;
+    padding-right: 5%;
 }
 
 body {
@@ -81,27 +82,45 @@ footer {
     width: 100%;
 }
 
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #e4fcffa5;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #7eb6ff;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #729fda;
-  }
-
   #alert {
     text-align: center;
     letter-spacing: 0px;
     position: relative;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, 0.604);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(255, 255, 255, 0.604);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(255, 255, 255, 0.604);
+  }
+  
+  input {
+    width: 100%;
+    padding: 11px 28px;
+    margin: 14px 3;
+    background-color: #79a7e2;
+    color: black;
+    border: none;
+    border-radius: 100px 100px 100px 100px; 
+    padding: 1%;
+}
+  .bottom {
+  padding-top: 2%;
+  }
+  
+  input[type="number"] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
 }

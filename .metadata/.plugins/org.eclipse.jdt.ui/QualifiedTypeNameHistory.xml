@@ -21,5 +21,9 @@
     <fullyQualifiedTypeName name="com.revature.project.one.utils.ConnUtil"/>
     <fullyQualifiedTypeName name="com.revature.project.one.entities.Manager"/>
     <fullyQualifiedTypeName name="com.revature.project.one.utils.LoginUtil"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.revature.project.one.entities.Reimbursement"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

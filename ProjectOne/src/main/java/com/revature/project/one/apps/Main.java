@@ -16,7 +16,13 @@ public static void main(String[] args) {
 
 	app.post("/login", EmployeeController.login);
 	app.get("/fetchemps", EmployeeController.getAllEmployees);
+	app.get("/fetchemps/{id}", EmployeeController.getEmployeeById);
 	app.get("/fetchreim", EmployeeController.getAllReimbursements);
+	app.get("/fetchreim/emp/{id}", EmployeeController.getReimbursementsByEmployee);
 	app.post("/makereim", EmployeeController.createReimbursement);
+	app.get("/fetchreim/{id}", EmployeeController.getReimbursementById);
+	app.put("/fetchreim/{id}/resolve", EmployeeController.resolveReimbursement);
+	//app.delete("/fetchreim/{id}", EmployeeController.deleteReimbursement);
+	
 }
 }

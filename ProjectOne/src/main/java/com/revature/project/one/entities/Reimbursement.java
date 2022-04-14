@@ -18,6 +18,13 @@ public class Reimbursement {
 		super();
 	}
 	
+	public Reimbursement(String type, int amount, String desc) {
+		super();
+		this.type = type;
+		this.amount = amount;
+		this.desc = desc;
+	}
+
 	public Reimbursement(int id, int empId, int manId, String type, int amount, String desc, String submit,
 			String resolve, boolean resolved, boolean accepted) {
 		super();

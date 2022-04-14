@@ -1,0 +1,55 @@
+var url = "http://localhost:8080/"
+
+makeNewReim = async (type, amt, desc) => {
+	let newExp = {type: type, amount: amt, desc: desc};
+	
+	let response = await fetch(url + 'makereim', {
+		method: 'POST',
+		credentials: "include",
+		headers: {'Content-Type': 'application/json;charset-utf-8'},
+		body: JSON.stringify(newExp)
+		});
+		let result = await response.text();
+		alert(result);
+};
+
+newReim = () => {
+	let type = document.getElementById("type").value;
+	let amt = document.getElementById("amount").value;
+	let desc = document.getElementById("description").value;
+	makeNewReim(type, amt, desc);
+};
+
+
+var apiURL = 'http://localhost:8080/fetchreim';
+
+
+function viewAll() {
+	const element = document.getElementById('alert');
+	element.remove();
+    var createPageBlock = '<div class="alert alert-primary" role="alert" id="alert"><h3>View All Of My Reimbursements</h3></div>' +
+   '<table = "viewall"><tr><th>ID</th> <th>EMP ID</th> <th>MANID</th> <th>TYPE</th> <th>AMOUNT</th> <th>DESC</th> <th>TIME SUBMITTED</th> <th>TIME RESOLVED</th> <th>RESOLVED</th> <th>ACCEPTED</th></tr></table>';
+    document.getElementById("text").innerHTML = createPageBlock;
+    getEmpReimbursements();
+    
+}
+
+function getEmpReimbursements (){
+    fetch(apiURL)
+    .then(response => response.json())  // convert to json
+    .then(json => displayData(json))    //pass data to displayData() OR print data to console
+    .catch(err => console.log('Request Failed', err)); // Catch errors
+}
+
+function displayData(response) {
+    var dataSection = document.getElementById('viewall');
+    
+   var tr=document.createElement("tr");
+   for(i=0;i<response.length;i++){
+    var item=document.createElement("td");
+       item.innerHTML= response[i].id +response[i].empId +response[i].manId + response[i].type + response[i].amount +response[i].desc + response[i].submit +response[i].resolve +response[i].resolved +response[i].accepted;
+       tr.appendChild(item);
+   }
+   dataSection.appendChild(tr);
+
+}

@@ -1,4 +1,5 @@
 
-njavascript:S1481"5Remove the declaration of the unused 'user' variable.(£όν8ΞΪΡ0H―
-RMINORZ
+javascript:S2703"]Add the "let", "const" or "var" keyword to this declaration of "newReim" to make it explicit.(κοΐ8Ί®΄‚0HΛRBLOCKERZ
+CODE_SMELL
+΅javascript:S2703"aAdd the "let", "const" or "var" keyword to this declaration of "makeNewReim" to make it explicit.(‘Υ—«ϋÿÿÿÿ8Ί®΄‚0HΚRBLOCKERZ
 CODE_SMELL

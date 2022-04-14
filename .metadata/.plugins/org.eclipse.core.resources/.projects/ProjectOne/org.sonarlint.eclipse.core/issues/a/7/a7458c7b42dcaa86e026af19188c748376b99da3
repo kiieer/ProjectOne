@@ -1,12 +1,122 @@
 
+n	java:S125v"<This block of commented-out lines of code should be removed.(ØÊÌñ8‹Ÿà“‚0Hì!RMAJORZ
+CODE_SMELL
+~
+java:S2095Ø"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Êı°8¨Ç°´‚0Hï!RBLOCKERZBUG
+j
+java:S1135Ó"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8¨Ç°´‚0Hğ!RINFOZ
+CODE_SMELL
+~
+java:S2095ª"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(äŸ§8ÆÍ±˜‚0Hñ!RBLOCKERZBUG
+h
+java:S1128	"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ8“µŸ£‚0Hò!RMINORZ
+CODE_SMELL
+‚
+java:S1192]"GDefine a constant instead of duplicating this literal "submit" 3 times.(¢œå¬ÿÿÿÿÿ8¨Ç°´‚0Hô!RCRITICALZ
+CODE_SMELL
+
+java:S1192_"IDefine a constant instead of duplicating this literal "resolved" 3 times.(åœŠ¿8¨Ç°´‚0Hø!RCRITICALZ
+CODE_SMELL
+Œ
+java:S22937"YReplace the type specification in this constructor call with the diamond operator ("<>").(æ«é¾8©Ù‘‚0Hü!RMINORZ
+CODE_SMELL
+j
+java:S1135·"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8œÏ ˜‚0Hş!RINFOZ
+CODE_SMELL
+i
+java:S1135f"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8±’‚0Hÿ!RINFOZ
+CODE_SMELL
+j
+java:S1135À"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ØÃÆ˜‚0H€"RINFOZ
+CODE_SMELL
+i
+java:S1135o"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8µ‡Ñ’‚0H"RINFOZ
+CODE_SMELL
+
+java:S1192""IDefine a constant instead of duplicating this literal "username" 3 times.(ê­¯8ÆÍ±˜‚0H‚"RCRITICALZ
+CODE_SMELL
+}
+java:S2095T"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Êı°8±’‚0H†"RBLOCKERZBUG
+‘
+java:S2293Q"YReplace the type specification in this constructor call with the diamond operator ("<>").(’ˆ‚Šşÿÿÿÿ8±’‚0H‡"RMINORZ
+CODE_SMELL
+}
+java:S2095:"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(äŸ§8©Ù‘‚0H‰"RBLOCKERZBUG
+i
+java:S1135O"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8±’‚0HŠ"RINFOZ
+CODE_SMELL
+]
+java:S1128"*Remove this unused import 'java.sql.Date'.(ÙÀ½Ê8“µŸ£‚0H‹"RMINORZ
+CODE_SMELL
+j
+java:S1135¥"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ÆÍ±˜‚0H"RINFOZ
+CODE_SMELL
+ˆ	java:S117n"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û˜ì¹ûÿÿÿÿ8ºç›£‚0H"RMINORZ
+CODE_SMELL
+
+java:S2293§"YReplace the type specification in this constructor call with the diamond operator ("<>").(æ«é¾8ÆÍ±˜‚0H"RMINORZ
+CODE_SMELL
+‚
+java:S2095q"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(óĞêåùÿÿÿÿ8ıØ¦“‚0H‘"RBLOCKERZBUG
+’
+java:S2293†"YReplace the type specification in this constructor call with the diamond operator ("<>").(’ˆ‚Šşÿÿÿÿ8œÏ ˜‚0H’"RMINORZ
+CODE_SMELL
+j
+java:S1135ë"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8¨Ç°´‚0H”"RINFOZ
+CODE_SMELL
+ˆ
+java:S1192^"MDefine a constant instead of duplicating this literal "resolve_time" 3 times.(†Åş¾øÿÿÿÿ8¨Ç°´‚0H•"RCRITICALZ
+CODE_SMELL
+‡
+java:S1192\"LDefine a constant instead of duplicating this literal "description" 3 times.(ÄšåÏüÿÿÿÿ8¨Ç°´‚0H™"RCRITICALZ
+CODE_SMELL
+ƒ
+java:S2095Â"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ßä©’üÿÿÿÿ8‘¿Ö˜‚0H"RBLOCKERZBUG
+‰	java:S117¿"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ³íùıÿÿÿÿ8™Á»¤‚0H"RMINORZ
+CODE_SMELL
+i
+java:S1135|"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ÆÍ±˜‚0HŸ"RINFOZ
+CODE_SMELL
+‚
+java:S1192X"GDefine a constant instead of duplicating this literal "emp_id" 3 times.(Ù£³¾úÿÿÿÿ8¨Ç°´‚0H "RCRITICALZ
+CODE_SMELL
+~
+java:S2095‰"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Êı°8œÏ ˜‚0H¤"RBLOCKERZBUG
+}
+java:S1192Y"GDefine a constant instead of duplicating this literal "man_id" 3 times.(Õ“ş–8¨Ç°´‚0H¥"RCRITICALZ
+CODE_SMELL
+i
+java:S1135F"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8©Ù‘‚0H©"RINFOZ
+CODE_SMELL
+’
+java:S2293Õ"YReplace the type specification in this constructor call with the diamond operator ("<>").(’ˆ‚Šşÿÿÿÿ8¨Ç°´‚0Hª"RMINORZ
+CODE_SMELL
+‚
+java:S1192["GDefine a constant instead of duplicating this literal "amount" 3 times.(ßÙŞšøÿÿÿÿ8¨Ç°´‚0H¬"RCRITICALZ
+CODE_SMELL
 b
-java:S1135("2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿH˜
-RINFOZ
+java:S1135-"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿH°"RINFOZ
+CODE_SMELL
+b
+java:S11355"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿH±"RINFOZ
+CODE_SMELL
+j
+java:S1135Ë"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8‘¿Ö˜‚0H²"RINFOZ
+CODE_SMELL
+j
+java:S1135„"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8œÏ ˜‚0H³"RINFOZ
+CODE_SMELL
+i
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ÕËÒ‚0H´"RINFOZ
+CODE_SMELL
+j
+java:S1135œ"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ıØ¦“‚0Hµ"RINFOZ
 CODE_SMELL
 v
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(öœÀH™
-RBLOCKERZBUG
-b
-java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿHš
-RINFOZ
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(öœÀH¶"RBLOCKERZBUG
+„
+java:S1192`"IDefine a constant instead of duplicating this literal "accepted" 3 times.(†÷´ùÿÿÿÿ8¨Ç°´‚0H·"RCRITICALZ
+CODE_SMELL
+~
+java:S1192#"HDefine a constant instead of duplicating this literal "emptype" 3 times.(îÂ¢Ê8ÆÍ±˜‚0H»"RCRITICALZ
 CODE_SMELL

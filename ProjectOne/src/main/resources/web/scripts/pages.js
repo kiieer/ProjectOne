@@ -37,3 +37,20 @@ function loginpage() {
     '<button type="submit" onclick="getInput()" id="loginbtn">Login</button>';
     document.getElementById("text").innerHTML = loginPageBlock;
 }
+
+function createreim() {
+	const element = document.getElementById('alert');
+	element.remove();
+    var createPageBlock = '<div class="alert alert-primary" role="alert" id="alert"><h3>Create Reimbursement</h3></div>' +
+    '<form onsubmit="newReim()">&nbsp <p id="test"><label>Type: &nbsp; </label><br>' +
+    '<input id="type" class = "create" type="text" placeholder="enter type..." name="type" required>' +
+    '<label class="bottom">Amount: &nbsp;</label><br>' +
+    '<input id="amount" class = "create" type="number" placeholder="enter amount..." name="amount" required>' +
+     '<label class="bottom">Reimbursement Description: &nbsp;</label><br>' +
+    '<input id="description" class = "create" type="textbox" placeholder="enter description..." name="description" required></p>' +
+    '<button type="submit" id="loginbtn">Submit</button></form>';
+    console.log("test");
+    document.getElementById("text").innerHTML = createPageBlock;
+}
+
+
