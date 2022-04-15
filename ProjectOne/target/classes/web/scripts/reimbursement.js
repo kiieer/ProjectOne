@@ -144,3 +144,22 @@ for (var i=0; i < len; i++) {
     table.appendChild(tr);
 }
 }
+
+async function manageReim(id, manboolean) {
+	let manExp = {id: id, accepted: manboolean};
+	
+	console.log(manExp);
+	
+	let response = await fetch(url + 'resolve', {
+		method: 'PUT',
+		headers: {'Content-Type': 'application/json'},
+		body: JSON.stringify(manExp)});
+		let result = await response.json();	
+};
+
+function manageReimData() {
+	let id = document.getElementById("reimid").value;
+	let manboolean = document.getElementById("booleanmanage").value;
+	console.log("my values: " + id, manboolean);
+	manageReim(id, manboolean);
+};

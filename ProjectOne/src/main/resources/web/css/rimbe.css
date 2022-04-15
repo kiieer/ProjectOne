@@ -181,3 +181,34 @@ th {
   ::-webkit-scrollbar-thumb:hover {
     background: #729fda;
   }
+  
+ select {
+  appearance: none;
+  background-color: #79a7e2;
+  border: none;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+  padding: 11px 28px;
+  margin: 14px 3;
+  background-color: #79a7e2;
+  color: rgba(255, 255, 255, 0.604);
+  border: none;
+  border-radius: 100px 100px 100px 100px; 
+  padding: 1%;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	margin-top: 0;
+	padding-left: 25px;
+	padding-right: 25px;  
+}
+
+option {
+	padding: 11px 28px;
+	padding-left: 20%;
+}
+

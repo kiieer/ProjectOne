@@ -20,7 +20,7 @@ public interface EmpSInterface {
 	
 	boolean createReimbursement(Reimbursement reimbursement, int CUID);
 	
-	void resolveReimbursement(Reimbursement reimbursement, int p, int CUID);
+	void resolveReimbursement(Reimbursement reimbursement, int CUID);
 	
 	
 	

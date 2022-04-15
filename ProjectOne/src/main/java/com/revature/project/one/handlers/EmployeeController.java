@@ -73,17 +73,15 @@ public class EmployeeController {
 	};
 	
 	public static Handler resolveReimbursement = ctx-> {
-		//int CUID = ctx.sessionAttribute("CUID");
-		int CUID = 2;
+		int CUID = ctx.sessionAttribute("CUID");
 		System.out.println(CUID);
-		int p = Integer.parseInt(ctx.pathParam("id"));
 		Reimbursement reimbursement = ctx.bodyAsClass(Reimbursement.class);
-		List <Reimbursement> rList = service.getReimbursementById(p);
+		List <Reimbursement> rList = service.getReimbursementById(reimbursement.getId());
 		if (rList.size() == 0) {
 			ctx.status(404);
 			ctx.result("[ERROR] We're sorry, the reimbursement you have specified does not exist in our database. Try again.");
 		} else {
-			service.resolveReimbursement(reimbursement, p, CUID);
+			service.resolveReimbursement(reimbursement, CUID);
 			ctx.status(200);
 			ctx.result("[SUCCESS] The reimbursement has been successfully updated.");
 		}

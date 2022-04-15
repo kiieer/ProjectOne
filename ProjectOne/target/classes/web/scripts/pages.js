@@ -99,12 +99,13 @@ function managereim() {
 	const element = document.getElementById('alert');
 	element.remove();
     var createPageBlock = '<div class="alert alert-primary" role="alert" id="alert"><h3>Manage Reimbursement</h3></div>' +
-    '<form onsubmit="manageReim()">&nbsp <p id="test"><label>ID: &nbsp; </label><br>' +
-    '<input id="type" class = "create" type="text" placeholder="enter type..." name="type" required>' +
-    '<label class="bottom">Amount: &nbsp;</label><br>' +
-    '<input id="amount" class = "create" type="number" placeholder="enter amount..." name="amount" required>' +
-     '<label class="bottom">Reimbursement Description: &nbsp;</label><br>' +
-    '<input id="description" class = "create" type="textbox" placeholder="enter description..." name="description" required></p>' +
+    '<form onsubmit="manageReimData()">&nbsp <p id="test"><label>ID: &nbsp; </label><br>' +
+    '<input id="reimid" class = "create" type="text" placeholder="enter reimbursement id..." name="reimid" required>' +
+	  '<label class="bottom">Manage: &nbsp; </label><br>' +
+	  '<select id="booleanmanage">' +
+	    '<option>true</option>' +
+	    '<option>false</option>' +
+	 ' </select></p>' +
     '<button type="submit" id="loginbtn">Submit</button></form>';
     console.log("test");
     document.getElementById("text").innerHTML = createPageBlock;

@@ -21,7 +21,7 @@ public static void main(String[] args) {
 	app.get("/fetchreim/emp/", EmployeeController.getReimbursementsByEmployee);
 	app.post("/makereim", EmployeeController.createReimbursement);
 	app.get("/fetchreim/{id}", EmployeeController.getReimbursementById);
-	app.put("/fetchreim/{id}/resolve", EmployeeController.resolveReimbursement);
+	app.put("/resolve", EmployeeController.resolveReimbursement);
 	//app.delete("/fetchreim/{id}", EmployeeController.deleteReimbursement);
 	
 }

@@ -40,8 +40,8 @@ public class EmpService implements EmpSInterface {
 		return dao.getEmployeeById(p);
 	}
 	@Override
-	public void resolveReimbursement(Reimbursement reimbursement, int p, int CUID) {
-		dao.resolveReimbursement(reimbursement, p, CUID);
+	public void resolveReimbursement(Reimbursement reimbursement, int CUID) {
+		dao.resolveReimbursement(reimbursement, CUID);
 		
 	}
 	@Override

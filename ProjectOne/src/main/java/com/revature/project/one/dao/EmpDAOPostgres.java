@@ -185,7 +185,7 @@ public class EmpDAOPostgres implements EmpDAO {
 	}
 
 	@Override
-	public void resolveReimbursement(Reimbursement reimbursement, int p, int CUID) {
+	public void resolveReimbursement(Reimbursement reimbursement, int CUID) {
 		// TODO Auto-generated method stub
 		try {
 			 Date date = new Date();
@@ -196,7 +196,7 @@ public class EmpDAOPostgres implements EmpDAO {
 			ptsmt.setString(2, today);
 			ptsmt.setBoolean(3, true);
 			ptsmt.setBoolean(4, reimbursement.isAccepted());
-			ptsmt.setInt(5, p);
+			ptsmt.setInt(5, reimbursement.getId());
 			ptsmt.execute();
 			ptsmt.close();
 		} catch (SQLException e) {
