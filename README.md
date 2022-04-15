@@ -1,4 +1,4 @@
-# ProjectOne
+# Project One: Solana
 Project One For Revature
 
 https://trello.com/b/meiFuZ1a/project-one-solana
