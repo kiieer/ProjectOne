@@ -1,7 +1,5 @@
 package com.revature.project.one.entities;
 
-import java.time.LocalDate;
-
 public class Reimbursement {
 	private int id;
 	private int empId;

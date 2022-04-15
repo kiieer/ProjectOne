@@ -6,15 +6,18 @@ import com.revature.project.one.entities.Employee;
 import com.revature.project.one.entities.Reimbursement;
 import com.revature.project.one.service.EmpSInterface;
 import com.revature.project.one.service.EmpService;
+import com.revature.project.one.service.RemSInterface;
+import com.revature.project.one.service.RemService;
 
 import io.javalin.http.Handler;
 
 public class EmployeeController {
-	static EmpSInterface service = new EmpService(); 
+	static EmpSInterface eservice = new EmpService(); 
+	static RemSInterface rservice = new RemService(); 
 	
 	public static Handler login = ctx-> {
 	Employee empObj = ctx.bodyAsClass(Employee.class);
-	Employee login = service.login(empObj);
+	Employee login = eservice.login(empObj);
 	System.out.println(login);
 	ctx.sessionAttribute("CUID", login.getId());
 	int CUID = ctx.sessionAttribute("CUID");
@@ -23,13 +26,13 @@ public class EmployeeController {
 	};
 	
 	public static Handler getAllEmployees = ctx-> {
-		List<Employee> eList = service.getAllEmployees();
+		List<Employee> eList = eservice.getAllEmployees();
 		ctx.json(eList);
 	};
 	
 	public static Handler getEmployeeById = ctx-> {
 		int p = Integer.parseInt(ctx.pathParam("id"));
-		List<Employee> eList = service.getEmployeeById(p);
+		List<Employee> eList = eservice.getEmployeeById(p);
 		if(eList.size() == 0) {
 			ctx.result("[ERROR] We're sorry, the client you have specified does not exist in our database. Try again.");
 			ctx.status(404);
@@ -41,7 +44,7 @@ public class EmployeeController {
 	};
 	
 	public static Handler getAllReimbursements= ctx-> {
-		List<Reimbursement> rList = service.getAllReimbursements();
+		List<Reimbursement> rList = rservice.getAllReimbursements();
 		ctx.json(rList);
 	};
 	
@@ -50,7 +53,7 @@ public class EmployeeController {
 		 System.out.println(CUID);
 		// String reqBody=ctx.body();
 		Reimbursement reimbursement = ctx.bodyAsClass(Reimbursement.class);
-		if (service.createReimbursement(reimbursement, CUID)) {
+		if (rservice.createReimbursement(reimbursement, CUID)) {
 			ctx.result("[SUCCESSFUL] Your reimbursement has been added!");
 			ctx.status(201);
 		} else {
@@ -61,7 +64,7 @@ public class EmployeeController {
 	
 	public static Handler getReimbursementById = ctx-> {
 		int p = Integer.parseInt(ctx.pathParam("id"));
-		List<Reimbursement> rList = service.getReimbursementById(p);
+		List<Reimbursement> rList = rservice.getReimbursementById(p);
 		if(rList.size() == 0) {
 			ctx.result("[ERROR] We're sorry, the client you have specified does not exist in our database. Try again.");
 			ctx.status(404);
@@ -76,12 +79,12 @@ public class EmployeeController {
 		int CUID = ctx.sessionAttribute("CUID");
 		System.out.println(CUID);
 		Reimbursement reimbursement = ctx.bodyAsClass(Reimbursement.class);
-		List <Reimbursement> rList = service.getReimbursementById(reimbursement.getId());
+		List <Reimbursement> rList = rservice.getReimbursementById(reimbursement.getId());
 		if (rList.size() == 0) {
 			ctx.status(404);
 			ctx.result("[ERROR] We're sorry, the reimbursement you have specified does not exist in our database. Try again.");
 		} else {
-			service.resolveReimbursement(reimbursement, CUID);
+			rservice.resolveReimbursement(reimbursement, CUID);
 			ctx.status(200);
 			ctx.result("[SUCCESS] The reimbursement has been successfully updated.");
 		}
@@ -89,13 +92,13 @@ public class EmployeeController {
 	
 	public static Handler getReimbursementsByEmployee = ctx-> {
 		int p = ctx.sessionAttribute("CUID");
-		List<Employee> rList = service.getEmployeeById(p);
+		List<Employee> rList = eservice.getEmployeeById(p);
 		if(rList.size() == 0) {
 			ctx.result("[ERROR] We're sorry, the reimbursement you have specified does not exist in our database. Try again.");
 			ctx.status(404);
 			
 		} else {
-			List<Reimbursement> reList = service.getReimbursementsByEmployee(p);
+			List<Reimbursement> reList = rservice.getReimbursementsByEmployee(p);
 			ctx.json(reList);
 			ctx.status(200);
 		}

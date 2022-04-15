@@ -22,7 +22,6 @@ public static void main(String[] args) {
 	app.post("/makereim", EmployeeController.createReimbursement);
 	app.get("/fetchreim/{id}", EmployeeController.getReimbursementById);
 	app.put("/resolve", EmployeeController.resolveReimbursement);
-	//app.delete("/fetchreim/{id}", EmployeeController.deleteReimbursement);
 	
 }
 }

@@ -5,7 +5,6 @@ import java.util.List;
 import com.revature.project.one.dao.EmpDAO;
 import com.revature.project.one.dao.EmpDAOPostgres;
 import com.revature.project.one.entities.Employee;
-import com.revature.project.one.entities.Reimbursement;
 
 public class EmpService implements EmpSInterface {
 	static EmpDAO dao = new EmpDAOPostgres();
@@ -19,34 +18,10 @@ public class EmpService implements EmpSInterface {
 		// TODO Auto-generated method stub
 		return dao.getAllEmployees();
 	}
-	@Override
-	public List<Reimbursement> getAllReimbursements() {
-		// TODO Auto-generated method stub
-		return dao.getAllReimbursements();
-	}
-	@Override
-	public boolean createReimbursement(Reimbursement reimbursement, int CUID) {
-		// TODO Auto-generated method stub
-		return dao.createReimbursement(reimbursement, CUID);
-	}
-	@Override
-	public List<Reimbursement> getReimbursementById(int p) {
-		// TODO Auto-generated method stub
-		return dao.getReimbursementById(p);
-	}
+	
 	@Override
 	public List<Employee> getEmployeeById(int p) {
 		// TODO Auto-generated method stub
 		return dao.getEmployeeById(p);
-	}
-	@Override
-	public void resolveReimbursement(Reimbursement reimbursement, int CUID) {
-		dao.resolveReimbursement(reimbursement, CUID);
-		
-	}
-	@Override
-	public List<Reimbursement> getReimbursementsByEmployee(int p) {
-		// TODO Auto-generated method stub
-		return dao.getReimbursementsByEmployee(p);
 	}
 }
