@@ -1,5 +1,11 @@
 
-˜javascript:S2703"]Add the "let", "const" or "var" keyword to this declaration of "newReim" to make it explicit.(êïÀ8º®Œ´‚0HËRBLOCKERZ
+Tjavascript:S1116"Unnecessary semicolon.(ôŸìúÿÿÿÿ8ì„ŒÉ‚0H»'RMINORZ
 CODE_SMELL
-¡javascript:S2703"aAdd the "let", "const" or "var" keyword to this declaration of "makeNewReim" to make it explicit.(‘Õ—«ûÿÿÿÿ8º®Œ´‚0HÊRBLOCKERZ
+mjavascript:S1854"4Remove this useless assignment to variable "result".(îÛÛ8áöÉ‚0Hè'RMAJORZ
+CODE_SMELL
+Tjavascript:S1116"Unnecessary semicolon.(ôŸìúÿÿÿÿ8ÍÒŠÉ‚0H£'RMINORZ
+CODE_SMELL
+pjavascript:S1481"7Remove the declaration of the unused 'result' variable.(îÛÛ8áöÉ‚0Hç'RMINORZ
+CODE_SMELL
+\javascript:S125"Remove this commented out code.(€£¡Óøÿÿÿÿ8½ÎÆÉ‚0H)RMAJORZ
 CODE_SMELL

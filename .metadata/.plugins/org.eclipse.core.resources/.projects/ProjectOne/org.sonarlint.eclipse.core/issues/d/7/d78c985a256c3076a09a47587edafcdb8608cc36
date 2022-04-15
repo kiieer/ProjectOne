@@ -1,9 +1,9 @@
 
-“javascript:S2392"ZConsider moving declaration of 'copy' as it is referenced outside current binding context.(Ìƒ²À8œ£±Ñ0HÁRMAJORZ
+Sjavascript:S2814"'copy' is already defined.(Ìƒ²À8œ£±Ñ0H&RMAJORZ
 CODE_SMELL
-Sjavascript:S2814"'copy' is already defined.(Ìƒ²À8œ£±Ñ0H¿RMAJORZ
+[javascript:S2814"'element' is already defined.(’Øç¶úÿÿÿÿ8œ£±Ñ0H&RMAJORZ
 CODE_SMELL
-[javascript:S2814"'element' is already defined.(’Øç¶úÿÿÿÿ8œ£±Ñ0HÀRMAJORZ
+›javascript:S2392"]Consider moving declaration of 'element' as it is referenced outside current binding context.(’Øç¶úÿÿÿÿ8œ£±Ñ0H‘&RMAJORZ
 CODE_SMELL
-›javascript:S2392"]Consider moving declaration of 'element' as it is referenced outside current binding context.(’Øç¶úÿÿÿÿ8œ£±Ñ0HÆRMAJORZ
+“javascript:S2392"ZConsider moving declaration of 'copy' as it is referenced outside current binding context.(Ìƒ²À8œ£±Ñ0H•&RMAJORZ
 CODE_SMELL

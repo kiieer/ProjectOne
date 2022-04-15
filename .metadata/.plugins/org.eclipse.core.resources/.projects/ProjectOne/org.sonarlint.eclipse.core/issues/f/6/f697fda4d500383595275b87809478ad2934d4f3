@@ -1,6 +1,6 @@
 
-t	java:S107"BConstructor has 10 parameters, which is greater than 7 authorized.(÷¼“Ş8æ¡ÿç0HÇRMAJORZ
-CODE_SMELL
 h
-java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ8Ûñ€’‚0HÌRMINORZ
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ8Ûñ€’‚0Hò"RMINORZ
+CODE_SMELL
+t	java:S107"BConstructor has 10 parameters, which is greater than 7 authorized.(÷¼“Ş8å‹´È‚0Hƒ$RMAJORZ
 CODE_SMELL

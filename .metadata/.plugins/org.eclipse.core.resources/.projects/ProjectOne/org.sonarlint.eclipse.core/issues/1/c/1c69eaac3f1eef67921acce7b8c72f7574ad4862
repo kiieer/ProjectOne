@@ -1,26 +1,26 @@
 
 i
-java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8Ä†Î’‚0H™RINFOZ
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ŞØÃ‘‚0H %RINFOZ
 CODE_SMELL
 i
-java:S1135""2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8‘èš˜‚0HšRINFOZ
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8É„Ç‚0H¢%RINFOZ
+CODE_SMELL
+i
+java:S1135""2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8‘èš˜‚0H¨%RINFOZ
+CODE_SMELL
+i
+java:S1135'"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8Å„´˜‚0H£%RINFOZ
+CODE_SMELL
+ˆ	java:S117+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ³íùıÿÿÿÿ8¼Û¶¤‚0H¡%RMINORZ
 CODE_SMELL
 b
-java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿH›RINFOZ
-CODE_SMELL
-ˆ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û˜ì¹ûÿÿÿÿ8Ì³˜£‚0HœRMINORZ
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿH¤%RINFOZ
 CODE_SMELL
 i
-java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ŞØÃ‘‚0HRINFOZ
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8Ä†Î’‚0H¦%RINFOZ
 CODE_SMELL
 i
-java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8É„Ç‚0HRINFOZ
+java:S11351"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ÌÙ¨´‚0H§%RINFOZ
 CODE_SMELL
-i
-java:S11351"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ÌÙ¨´‚0HŸRINFOZ
-CODE_SMELL
-i
-java:S1135'"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8Å„´˜‚0H RINFOZ
-CODE_SMELL
-ˆ	java:S117+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ³íùıÿÿÿÿ8¼Û¶¤‚0H¡RMINORZ
+ˆ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û˜ì¹ûÿÿÿÿ8³î¿É‚0HÁ(RMINORZ
 CODE_SMELL
