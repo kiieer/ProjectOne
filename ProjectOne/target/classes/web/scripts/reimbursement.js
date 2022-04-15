@@ -23,13 +23,75 @@ function newReim() {
 
 function getEmpReimbursements (){
 	console.log("im here");
-    fetch('http://localhost:8080/fetchreim')
+    fetch('http://localhost:8080/fetchreim/emp/')
     .then(response => response.json())  // convert to json
-    .then(json => displayData(json))    //pass data to displayData() OR print data to console
+    .then(json => displayEmpData(json))    //pass data to displayData() OR print data to console
     .catch(err => console.log('Request Failed', err)); // Catch errors
 }
 
-function displayData(response) {
+function displayEmpData(response) {
+var len = response.length;
+const table = document.getElementById("testtable");
+
+for (var i=0; i < len; i++) {
+    var tr = document.createElement('tr');
+    var s = response[i];
+    
+    console.log("test");
+
+    var td = document.createElement('td');
+    td.innerHTML = s.id;
+    tr.appendChild(td);
+
+    td = document.createElement('td');
+    td.innerHTML = s.empId;
+    tr.appendChild(td);
+
+    td = document.createElement('td');
+    td.innerHTML = s.manId;
+    tr.appendChild(td);
+
+    td = document.createElement('td');
+    td.innerHTML = s.type;
+    tr.appendChild(td);
+
+    td = document.createElement('td');
+    td.innerHTML = s.amount;
+    tr.appendChild(td);
+    
+    td = document.createElement('td');
+    td.innerHTML = s.desc;
+    tr.appendChild(td);
+    
+    td = document.createElement('td');
+    td.innerHTML = s.submit;
+    tr.appendChild(td);
+    
+    td = document.createElement('td');
+    td.innerHTML = s.resolve;
+    tr.appendChild(td);
+    
+    td = document.createElement('td');
+    td.innerHTML = s.resolved;
+    tr.appendChild(td);
+    
+    td = document.createElement('td');
+    td.innerHTML = s.accepted;
+    tr.appendChild(td);
+
+    table.appendChild(tr);
+}
+}
+
+function getAllReimbursements (){
+	console.log("im here");
+    fetch('http://localhost:8080/fetchreim')
+    .then(response => response.json())  // convert to json
+    .then(json => displayAllData(json))    //pass data to displayData() OR print data to console
+    .catch(err => console.log('Request Failed', err)); // Catch errors
+}
+
+function displayAllData(response) {
 var len = response.length;
 const table = document.getElementById("testtable");
 

@@ -73,25 +73,27 @@ public class EmployeeController {
 	};
 	
 	public static Handler resolveReimbursement = ctx-> {
-		int CUID = ctx.sessionAttribute("CUID");
+		//int CUID = ctx.sessionAttribute("CUID");
+		int CUID = 2;
+		System.out.println(CUID);
 		int p = Integer.parseInt(ctx.pathParam("id"));
 		Reimbursement reimbursement = ctx.bodyAsClass(Reimbursement.class);
 		List <Reimbursement> rList = service.getReimbursementById(p);
 		if (rList.size() == 0) {
 			ctx.status(404);
-			ctx.result("[ERROR] We're sorry, the client you have specified does not exist in our database. Try again.");
+			ctx.result("[ERROR] We're sorry, the reimbursement you have specified does not exist in our database. Try again.");
 		} else {
 			service.resolveReimbursement(reimbursement, p, CUID);
 			ctx.status(200);
-			ctx.result("[SUCCESS] The client has been successfully updated.");
+			ctx.result("[SUCCESS] The reimbursement has been successfully updated.");
 		}
 	};
 	
 	public static Handler getReimbursementsByEmployee = ctx-> {
-		int p = Integer.parseInt(ctx.pathParam("id"));
+		int p = ctx.sessionAttribute("CUID");
 		List<Employee> rList = service.getEmployeeById(p);
 		if(rList.size() == 0) {
-			ctx.result("[ERROR] We're sorry, the client you have specified does not exist in our database. Try again.");
+			ctx.result("[ERROR] We're sorry, the reimbursement you have specified does not exist in our database. Try again.");
 			ctx.status(404);
 			
 		} else {

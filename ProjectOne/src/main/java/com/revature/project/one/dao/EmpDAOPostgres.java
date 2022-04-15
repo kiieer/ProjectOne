@@ -2,13 +2,13 @@ package com.revature.project.one.dao;
 
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.time.LocalDate;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Date;
 
 import com.revature.project.one.entities.Employee;
 import com.revature.project.one.entities.Reimbursement;
@@ -188,10 +188,13 @@ public class EmpDAOPostgres implements EmpDAO {
 	public void resolveReimbursement(Reimbursement reimbursement, int p, int CUID) {
 		// TODO Auto-generated method stub
 		try {
-			PreparedStatement ptsmt = conn.prepareStatement("update reimbursement set man_id=?, resolve_time = ?::date, resolved = ?, accepted = ?  where id = ?");
+			 Date date = new Date();
+		     SimpleDateFormat formatter = new SimpleDateFormat("MM-dd-yy");
+		     String today = formatter.format(date);
+			PreparedStatement ptsmt = conn.prepareStatement("update reimbursements set man_id=?, resolve_time = ?::date, resolved = ?, accepted = ?  where id = ?");
 			ptsmt.setInt(1, CUID);
-			ptsmt.setString(2, reimbursement.getResolve());
-			ptsmt.setBoolean(3, reimbursement.isResolved());
+			ptsmt.setString(2, today);
+			ptsmt.setBoolean(3, true);
 			ptsmt.setBoolean(4, reimbursement.isAccepted());
 			ptsmt.setInt(5, p);
 			ptsmt.execute();

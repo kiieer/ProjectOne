@@ -18,7 +18,7 @@ public static void main(String[] args) {
 	app.get("/fetchemps", EmployeeController.getAllEmployees);
 	app.get("/fetchemps/{id}", EmployeeController.getEmployeeById);
 	app.get("/fetchreim", EmployeeController.getAllReimbursements);
-	app.get("/fetchreim/emp/{id}", EmployeeController.getReimbursementsByEmployee);
+	app.get("/fetchreim/emp/", EmployeeController.getReimbursementsByEmployee);
 	app.post("/makereim", EmployeeController.createReimbursement);
 	app.get("/fetchreim/{id}", EmployeeController.getReimbursementById);
 	app.put("/fetchreim/{id}/resolve", EmployeeController.resolveReimbursement);

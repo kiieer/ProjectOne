@@ -1,9 +1,5 @@
 create table employees (
-id serial primary key, username varchar(30), pass varchar(30));
-
-create table managers (
-id serial primary key, username varchar(30), pass varchar(30));
-
+id serial primary key, username varchar(255), pass varchar(255), emptype varchar(255));
 
 create table reimbursements (
 id serial primary key,
@@ -13,9 +9,8 @@ type varchar,
 amount numeric, 
 description varchar(30),
 submit timestamp not null default CURRENT_TIMESTAMP,
-resolve_time timestamp default CURRENT_TIMESTAMP,
+resolve_time date,
 resolved boolean,
 accepted boolean,
-foreign key (emp_id) references employees(id),
-foreign key (man_id) references managers(id)
+foreign key (emp_id) references employees(id)
 );

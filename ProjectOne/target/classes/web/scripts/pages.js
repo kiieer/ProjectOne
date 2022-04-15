@@ -53,7 +53,7 @@ function createreim() {
     document.getElementById("text").innerHTML = createPageBlock;
 }
 
-function viewAll() {
+function viewMyReim() {
 	const element = document.getElementById('alert');
 	element.remove();
     var createPageBlock = '<div class="alert alert-primary" role="alert" id="alert"><h3>View All Of My Reimbursements</h3></div>' + '<div id="tablecontainer">' +
@@ -72,6 +72,42 @@ function viewAll() {
     document.getElementById("text").innerHTML = createPageBlock;
    getEmpReimbursements();
     
+}
+
+function viewAll() {
+	const element = document.getElementById('alert');
+	element.remove();
+    var createPageBlock = '<div class="alert alert-primary" role="alert" id="alert"><h3>View All Employee Reimbursements</h3></div>' + '<div id="tablecontainer">' +
+    '<table id="testtable">' +
+ ' <thead>'+
+    '<tr>' +
+      `<th>ID</th> <th>Employee</th> <th>Manager</th> <th>Type</th> <th>Amount</th> <th>Description</th> <th id="makesmall">Submitted</th> <th>Settled</th> <th>Resolved</th> <th>Accepted</th>`+
+    '</tr>' +
+ ' </thead>' +
+  '<tbody>' +
+ ' </tbody>' +
+ ' <tfoot>' +
+' </tfoot>' +
+'</table>' + 
+    '</div>';
+    document.getElementById("text").innerHTML = createPageBlock;
+   getAllReimbursements();
+    
+}
+
+function managereim() {
+	const element = document.getElementById('alert');
+	element.remove();
+    var createPageBlock = '<div class="alert alert-primary" role="alert" id="alert"><h3>Manage Reimbursement</h3></div>' +
+    '<form onsubmit="manageReim()">&nbsp <p id="test"><label>ID: &nbsp; </label><br>' +
+    '<input id="type" class = "create" type="text" placeholder="enter type..." name="type" required>' +
+    '<label class="bottom">Amount: &nbsp;</label><br>' +
+    '<input id="amount" class = "create" type="number" placeholder="enter amount..." name="amount" required>' +
+     '<label class="bottom">Reimbursement Description: &nbsp;</label><br>' +
+    '<input id="description" class = "create" type="textbox" placeholder="enter description..." name="description" required></p>' +
+    '<button type="submit" id="loginbtn">Submit</button></form>';
+    console.log("test");
+    document.getElementById("text").innerHTML = createPageBlock;
 }
 
 
