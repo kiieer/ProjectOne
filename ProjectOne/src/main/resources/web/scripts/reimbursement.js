@@ -21,33 +21,9 @@ function newReim() {
 	makeNewReim(type, amt, desc);
 };
 
-
-var apiURL = 'http://localhost:8080/fetchreim';
-
-
-function viewAll() {
-	const element = document.getElementById('alert');
-	element.remove();
-    var createPageBlock = '<div class="alert alert-primary" role="alert" id="alert"><h3>View All Of My Reimbursements</h3></div>' + '<div id="tablecontainer"> hello i\'m a div box ' +
-    '<table>' +
- ' <thead>'+
-    '<tr>' +
-      `<th>ID</th> <th>EMP ID</th> <th>MANID</th> <th>TYPE</th> <th>AMOUNT</th> <th>DESC</th> <th>TIME SUBMITTED</th> <th>TIME RESOLVED</th> <th>RESOLVED</th> <th>ACCEPTED</th>`+
-    '</tr>' +
- ' </thead>' +
-  '<tbody>' +
- ' </tbody>' +
- ' <tfoot>' +
-' </tfoot>' +
-'</table>' + 
-    '</div>';
-    document.getElementById("text").innerHTML = createPageBlock;
-    getEmpReimbursements();
-    
-}
-
 function getEmpReimbursements (){
-    fetch(apiURL)
+	console.log("im here");
+    fetch('http://localhost:8080/fetchreim')
     .then(response => response.json())  // convert to json
     .then(json => displayData(json))    //pass data to displayData() OR print data to console
     .catch(err => console.log('Request Failed', err)); // Catch errors
@@ -55,11 +31,13 @@ function getEmpReimbursements (){
 
 function displayData(response) {
 var len = response.length;
-var table = document.getElementsByTagName('tbody');
+const table = document.getElementById("testtable");
 
 for (var i=0; i < len; i++) {
     var tr = document.createElement('tr');
     var s = response[i];
+    
+    console.log("test");
 
     var td = document.createElement('td');
     td.innerHTML = s.id;
@@ -79,6 +57,26 @@ for (var i=0; i < len; i++) {
 
     td = document.createElement('td');
     td.innerHTML = s.amount;
+    tr.appendChild(td);
+    
+    td = document.createElement('td');
+    td.innerHTML = s.desc;
+    tr.appendChild(td);
+    
+    td = document.createElement('td');
+    td.innerHTML = s.submit;
+    tr.appendChild(td);
+    
+    td = document.createElement('td');
+    td.innerHTML = s.resolve;
+    tr.appendChild(td);
+    
+    td = document.createElement('td');
+    td.innerHTML = s.resolved;
+    tr.appendChild(td);
+    
+    td = document.createElement('td');
+    td.innerHTML = s.accepted;
     tr.appendChild(td);
 
     table.appendChild(tr);

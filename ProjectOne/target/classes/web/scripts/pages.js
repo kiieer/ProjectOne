@@ -53,4 +53,25 @@ function createreim() {
     document.getElementById("text").innerHTML = createPageBlock;
 }
 
+function viewAll() {
+	const element = document.getElementById('alert');
+	element.remove();
+    var createPageBlock = '<div class="alert alert-primary" role="alert" id="alert"><h3>View All Of My Reimbursements</h3></div>' + '<div id="tablecontainer">' +
+    '<table id="testtable">' +
+ ' <thead>'+
+    '<tr>' +
+      `<th>ID</th> <th>Employee</th> <th>Manager</th> <th>Type</th> <th>Amount</th> <th>Description</th> <th id="makesmall">Submitted</th> <th>Settled</th> <th>Resolved</th> <th>Accepted</th>`+
+    '</tr>' +
+ ' </thead>' +
+  '<tbody>' +
+ ' </tbody>' +
+ ' <tfoot>' +
+' </tfoot>' +
+'</table>' + 
+    '</div>';
+    document.getElementById("text").innerHTML = createPageBlock;
+   getEmpReimbursements();
+    
+}
+
 
