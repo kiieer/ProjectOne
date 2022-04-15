@@ -36,7 +36,6 @@ const table = document.getElementById("testtable");
 for (var i=0; i < len; i++) {
     var tr = document.createElement('tr');
     var s = response[i];
-    
     console.log("test");
 
     var td = document.createElement('td');
@@ -96,51 +95,29 @@ var len = response.length;
 const table = document.getElementById("testtable");
 
 for (var i=0; i < len; i++) {
+	
     var tr = document.createElement('tr');
     var s = response[i];
     
-    console.log("test");
-
-    var td = document.createElement('td');
-    td.innerHTML = s.id;
-    tr.appendChild(td);
-
-    td = document.createElement('td');
-    td.innerHTML = s.empId;
-    tr.appendChild(td);
-
-    td = document.createElement('td');
-    td.innerHTML = s.manId;
-    tr.appendChild(td);
-
-    td = document.createElement('td');
-    td.innerHTML = s.type;
-    tr.appendChild(td);
-
-    td = document.createElement('td');
-    td.innerHTML = s.amount;
-    tr.appendChild(td);
-    
-    td = document.createElement('td');
-    td.innerHTML = s.desc;
-    tr.appendChild(td);
-    
-    td = document.createElement('td');
-    td.innerHTML = s.submit;
-    tr.appendChild(td);
-    
-    td = document.createElement('td');
-    td.innerHTML = s.resolve;
-    tr.appendChild(td);
-    
-    td = document.createElement('td');
-    td.innerHTML = s.resolved;
-    tr.appendChild(td);
-    
-    td = document.createElement('td');
-    td.innerHTML = s.accepted;
-    tr.appendChild(td);
-
+    for (let j in s) {
+		if (s.hasOwnProperty(j)) {
+			//console.log(`${j}: ${s[j]}`)
+			if(s[j] == null) {
+				s[j] = " ";
+			}
+		}
+		}
+		
+    tr.innerHTML = `<td onclick=managereim(${s.id})> ${s.id}</td>
+    <td onclick=managereim(${s.id})> ${s.empId}</td>
+    <td onclick=managereim(${s.id})> ${s.manId}</td>
+    <td onclick=managereim(${s.id})> ${s.type}</td>
+    <td onclick=managereim(${s.id})> ${s.amount}</td>
+    <td onclick=managereim(${s.id})> ${s.desc}</td>
+    <td onclick=managereim(${s.id})> ${s.submit}</td>
+    <td onclick=managereim(${s.id})> ${s.resolve}</td>
+    <td onclick=managereim(${s.id})> ${s.resolved}</td>
+    <td onclick=managereim(${s.id})> ${s.accepted}</td>`
     table.appendChild(tr);
 }
 }

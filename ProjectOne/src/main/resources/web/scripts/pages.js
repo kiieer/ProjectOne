@@ -95,12 +95,12 @@ function viewAll() {
     
 }
 
-function managereim() {
+function managereim(id) {
 	const element = document.getElementById('alert');
 	element.remove();
     var createPageBlock = '<div class="alert alert-primary" role="alert" id="alert"><h3>Manage Reimbursement</h3></div>' +
     '<form onsubmit="manageReimData()">&nbsp <p id="test"><label>ID: &nbsp; </label><br>' +
-    '<input id="reimid" class = "create" type="text" placeholder="enter reimbursement id..." name="reimid" required>' +
+    `<input id="reimid" class = "create" type="text" placeholder="enter reimbursement id..." name="reimid" disabled value="${id}">` +
 	  '<label class="bottom">Manage: &nbsp; </label><br>' +
 	  '<select id="booleanmanage">' +
 	    '<option>true</option>' +

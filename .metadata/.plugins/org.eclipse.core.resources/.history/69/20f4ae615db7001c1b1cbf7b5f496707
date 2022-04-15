@@ -1,7 +1,0 @@
-package com.revature.project.one.service;
-
-public class Service {
-	public Employee login(Employee empObj) {
-		return dao.login(empObj);
-	}
-}

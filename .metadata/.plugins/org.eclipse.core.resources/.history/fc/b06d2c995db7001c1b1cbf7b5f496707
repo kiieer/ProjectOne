@@ -1,5 +1,0 @@
-package com.revature.project.one.dao;
-
-public interface EmpDAO {
-
-}
