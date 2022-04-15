@@ -27,4 +27,9 @@
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="io.opentelemetry.exporter.logging.SystemOutLogExporter"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="com.revature.project.one.dao.RemDAO"/>
+    <fullyQualifiedTypeName name="com.revature.project.one.dao.RemDAOPostgres"/>
+    <fullyQualifiedTypeName name="com.revature.project.one.service.RemSInterface"/>
+    <fullyQualifiedTypeName name="com.revature.project.one.service.RemService"/>
 </qualifiedTypeNameHistroy>

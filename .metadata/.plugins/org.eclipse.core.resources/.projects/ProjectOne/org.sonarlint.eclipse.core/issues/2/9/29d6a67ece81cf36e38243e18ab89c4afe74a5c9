@@ -1,84 +1,83 @@
 
-p	java:S1062"9Replace this use of System.out or System.err by a logger.(ÄšŠòûÿÿÿÿ8—®¾É‚0Hš(RMAJORZ
-CODE_SMELL
-Ž
-java:S1104"[Make getAllEmployees a static final constant or non-public and provide accessors if needed.(È§‹Ò8‘ö±‚0HÌ"RMINORZ
-CODE_SMELL
-h
-java:S1444"5Make this "public static getAllEmployees" field final(È§‹Ò8‘ö±‚0Hâ"RMINORZ
-CODE_SMELL
 q
-java:S14440"9Make this "public static createReimbursement" field final(€Ùûêÿÿÿÿÿ8ñüè0HÚ"RMINORZ
+java:S14443"9Make this "public static createReimbursement" field final(€Ùûêÿÿÿÿÿ8ñüè0H»)RMINORZ
 CODE_SMELL
-j
-java:S1117"9Rename "login" which hides the field declared at line 15.(ô•à„ùÿÿÿÿHÎ"RMAJORZ
-CODE_SMELL
-f
-java:S1118":Add a private constructor to hide the implicit public one.(ÈÅðªHÔ"RMAJORZ
-CODE_SMELL
-ƒ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò¢†8ã¡£‚0HÓ"RMINORZ
-CODE_SMELL
-“
-java:S1104"[Make getEmployeeById a static final constant or non-public and provide accessors if needed.(ƒÞ´Ñøÿÿÿÿ8ßÌª˜‚0Hì"RMINORZ
+p	java:S106"9Replace this use of System.out or System.err by a logger.(ÄšŠòûÿÿÿÿ8ã¡£‚0H¯)RMAJORZ
 CODE_SMELL
 r
-java:S1444+":Make this "public static getAllReimbursements" field final(ãËÃ†ýÿÿÿÿ8‘ö±‚0Hí"RMINORZ
+java:S1444.":Make this "public static getAllReimbursements" field final(ãËÃ†ýÿÿÿÿ8‘ö±‚0H±)RMINORZ
+CODE_SMELL
+p	java:S1065"9Replace this use of System.out or System.err by a logger.(ÄšŠòûÿÿÿÿ8²å¹â‚0Hü,RMAJORZ
 CODE_SMELL
 v
-java:S1155A">Use isEmpty() to check whether the collection is empty or not.(×¤ª£ÿÿÿÿÿ8ßÌª˜‚0HÑ"RMINORZ
-CODE_SMELL
-v
-java:S1155P">Use isEmpty() to check whether the collection is empty or not.(×¤ª£ÿÿÿÿÿ8Æ´À˜‚0Hå"RMINORZ
+java:S1155D">Use isEmpty() to check whether the collection is empty or not.(×¤ª£ÿÿÿÿÿ8ßÌª˜‚0H¶)RMINORZ
 CODE_SMELL
 m
-java:S1444"5Make this "public static getEmployeeById" field final(ƒÞ´Ñøÿÿÿÿ8ßÌª˜‚0Hã"RMINORZ
-CODE_SMELL
-“
-java:S1104>"`Make getReimbursementById a static final constant or non-public and provide accessors if needed.(ÿ¼¿Ã8…îŒ˜‚0Hï"RMINORZ
-CODE_SMELL
-i	java:S106"9Replace this use of System.out or System.err by a logger.(ÔÔÕ“þÿÿÿÿHð"RMAJORZ
-CODE_SMELL
-š
-java:S1104Z"gMake getReimbursementsByEmployee a static final constant or non-public and provide accessors if needed.(ü¾«Í8ÚÎ¤´‚0Hë"RMINORZ
+java:S1444A":Make this "public static getReimbursementById" field final(ÿ¼¿Ã8…îŒ˜‚0H)RMINORZ
 CODE_SMELL
 ˜
-java:S1104+"`Make getAllReimbursements a static final constant or non-public and provide accessors if needed.(ãËÃ†ýÿÿÿÿ8‘ö±‚0HÍ"RMINORZ
+java:S1104."`Make getAllReimbursements a static final constant or non-public and provide accessors if needed.(ãËÃ†ýÿÿÿÿ8‘ö±‚0Hµ)RMINORZ
 CODE_SMELL
-—
-java:S11040"_Make createReimbursement a static final constant or non-public and provide accessors if needed.(€Ùûêÿÿÿÿÿ8ñüè0HÏ"RMINORZ
+Ž
+java:S1104"[Make getAllEmployees a static final constant or non-public and provide accessors if needed.(È§‹Ò8‘ö±‚0Hº)RMINORZ
+CODE_SMELL
+j
+java:S1117"9Rename "login" which hides the field declared at line 18.( Š¥äþÿÿÿÿH¹)RMAJORZ
+CODE_SMELL
+f
+java:S1118":Add a private constructor to hide the implicit public one.(ÈÅðªH¾)RMAJORZ
+CODE_SMELL
+ƒ	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò¢†8—®¾É‚0HŸ)RMINORZ
 CODE_SMELL
 “
-java:S1104K"`Make resolveReimbursement a static final constant or non-public and provide accessors if needed.(È»±»8Ô‰Ö—‚0Hê"RMINORZ
+java:S1104A"`Make getReimbursementById a static final constant or non-public and provide accessors if needed.(ÿ¼¿Ã8…îŒ˜‚0H¿)RMINORZ
 CODE_SMELL
-‚
-java:S1104"QMake login a static final constant or non-public and provide accessors if needed.(©øÌ±ÿÿÿÿÿHç"RMINORZ
+h
+java:S1444"5Make this "public static getAllEmployees" field final(È§‹Ò8‘ö±‚0H¤)RMINORZ
+CODE_SMELL
+m
+java:S1444!"5Make this "public static getEmployeeById" field final(ƒÞ´Ñøÿÿÿÿ8ßÌª˜‚0H³)RMINORZ
+CODE_SMELL
+“
+java:S1104N"`Make resolveReimbursement a static final constant or non-public and provide accessors if needed.(È»±»8Ô‰Ö—‚0H£)RMINORZ
+CODE_SMELL
+p	java:S106P"9Replace this use of System.out or System.err by a logger.(ÄšŠòûÿÿÿÿ8—®¾É‚0H›)RMAJORZ
+CODE_SMELL
+v
+java:S1155$">Use isEmpty() to check whether the collection is empty or not.(–Œ¿µýÿÿÿÿ8ô„—˜‚0H¼)RMINORZ
+CODE_SMELL
+ƒ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò¢†8ã¡£‚0H¸)RMINORZ
+CODE_SMELL
+ƒ	java:S117O"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò¢†8¼›ƒà‚0H 7RMINORZ
 CODE_SMELL
 \
-java:S1444"+Make this "public static login" field final(©øÌ±ÿÿÿÿÿHÙ"RMINORZ
-CODE_SMELL
-p	java:S106"9Replace this use of System.out or System.err by a logger.(ÄšŠòûÿÿÿÿ8ã¡£‚0Hä"RMAJORZ
-CODE_SMELL
-ƒ	java:S117L"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò¢†8ŸÓµ¤‚0HÛ"RMINORZ
+java:S1444"+Make this "public static login" field final(©øÌ±ÿÿÿÿÿHÀ)RMINORZ
 CODE_SMELL
 m
-java:S1444>":Make this "public static getReimbursementById" field final(ÿ¼¿Ã8…îŒ˜‚0HÕ"RMINORZ
+java:S1444N":Make this "public static resolveReimbursement" field final(È»±»8Ô‰Ö—‚0H¥)RMINORZ
 CODE_SMELL
 t
-java:S1444Z"AMake this "public static getReimbursementsByEmployee" field final(ü¾«Í8ÚÎ¤´‚0HÐ"RMINORZ
+java:S1444]"AMake this "public static getReimbursementsByEmployee" field final(ü¾«Í8ÚÎ¤´‚0H´)RMINORZ
+CODE_SMELL
+“
+java:S1104!"[Make getEmployeeById a static final constant or non-public and provide accessors if needed.(ƒÞ´Ñøÿÿÿÿ8ßÌª˜‚0Hœ)RMINORZ
+CODE_SMELL
+s	java:S1256"<This block of commented-out lines of code should be removed.(¯–ïûÿÿÿÿ8«ÜÙÉ‚0H )RMAJORZ
 CODE_SMELL
 v
-java:S1155!">Use isEmpty() to check whether the collection is empty or not.(–Œ¿µýÿÿÿÿ8ô„—˜‚0Hè"RMINORZ
+java:S1155S">Use isEmpty() to check whether the collection is empty or not.(×¤ª£ÿÿÿÿÿ8Æ´À˜‚0H¡)RMINORZ
 CODE_SMELL
-Ú
-java:S1192""žDefine a constant instead of duplicating this literal "[ERROR] We're sorry, the client you have specified does not exist in our database. Try again." 4 times.(Ì¤ƒýÿÿÿÿ8Æ´À˜‚0HÝ"RCRITICALZ
+—
+java:S11043"_Make createReimbursement a static final constant or non-public and provide accessors if needed.(€Ùûêÿÿÿÿÿ8ñüè0H¦)RMINORZ
 CODE_SMELL
-ƒ	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò¢†8—®¾É‚0H›(RMINORZ
+š
+java:S1104]"gMake getReimbursementsByEmployee a static final constant or non-public and provide accessors if needed.(ü¾«Í8ÚÎ¤´‚0H°)RMINORZ
+CODE_SMELL
+i	java:S106"9Replace this use of System.out or System.err by a logger.(ÔÔÕ“þÿÿÿÿH²)RMAJORZ
 CODE_SMELL
 v
-java:S1155]">Use isEmpty() to check whether the collection is empty or not.(×¤ª£ÿÿÿÿÿ8ÚÎ¤´‚0HÖ"RMINORZ
+java:S1155`">Use isEmpty() to check whether the collection is empty or not.(×¤ª£ÿÿÿÿÿ8ÚÎ¤´‚0H¬)RMINORZ
 CODE_SMELL
-m
-java:S1444K":Make this "public static resolveReimbursement" field final(È»±»8Ô‰Ö—‚0Hî"RMINORZ
-CODE_SMELL
-s	java:S1253"<This block of commented-out lines of code should be removed.(¯–ïûÿÿÿÿ8«ÜÙÉ‚0H˜)RMAJORZ
+‚
+java:S1104"QMake login a static final constant or non-public and provide accessors if needed.(©øÌ±ÿÿÿÿÿHž)RMINORZ
 CODE_SMELL

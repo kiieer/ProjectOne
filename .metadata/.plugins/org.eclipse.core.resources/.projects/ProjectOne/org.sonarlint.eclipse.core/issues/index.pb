@@ -49,3 +49,11 @@ T
 $src/main/resources/web/css/mycss.css,4\8\481225c09c5ce8fc0cee3334461b3dd139d0f2e2
 T
 $src/main/resources/web/css/rimbe.css,e\1\e19e51ab39beff1c913ec5d8dab7abfffdfd6675
+f
+6src/main/java/com/revature/project/one/dao/RemDAO.java,6\9\69b686d4dadc2d09be6c2f4446c5ac04e1d93786
+n
+>src/main/java/com/revature/project/one/dao/RemDAOPostgres.java,a\7\a7d742f33d4ecdf157aef45e22e74e967b973236
+q
+Asrc/main/java/com/revature/project/one/service/RemSInterface.java,0\e\0eca0adccd97ec9021ac54ee993377d64431d4ee
+n
+>src/main/java/com/revature/project/one/service/RemService.java,6\4\645a99d955a4bc3108b3233bc5e5cd7118221e40
