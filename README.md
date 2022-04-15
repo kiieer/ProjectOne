@@ -1,3 +1,5 @@
+<img src="https://i.imgur.com/fqvNC8M.png">
+
 # Project One: Solana
 Project One For Revature
 
