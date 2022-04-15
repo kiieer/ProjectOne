@@ -39,6 +39,6 @@ Key Features we are utilizing in our Expense Reimbursement System
 10. completed E2E tests using gherkin and selnium for all user stories.
 
 ## ADDITIONAL
-1. Your program should be a singleton.
+1. Your program should have a singleton connection utility.
 2. Your program should have a logger.
 3. Your program should implement Bootstrap CSS.
