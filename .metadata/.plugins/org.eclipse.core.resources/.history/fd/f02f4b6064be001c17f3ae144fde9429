@@ -1,0 +1,14 @@
+package com.revature.project.one.daotests;
+
+import static org.mockito.Mockito.mock;
+
+import com.revature.project.one.dao.RemDAO;
+import com.revature.project.one.dao.RemDAOPostgres;
+import com.revature.project.one.entities.Reimbursement;
+
+public class ReimDAOTest {
+	private static RemDAO rdao = mock(RemDAOPostgres.class); 
+	private static Reimbursement globalReim = mock(Reimbursement.class);
+	
+	
+}

@@ -1,0 +1,21 @@
+package com.revature.project.one.utiltests;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
+
+import com.revature.project.one.utils.ConnUtil;
+
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+public class ConnUtilTest {
+	private static conn1 = ConnUtil.getInstance();
+	private static conn2 =  ConnUtil.getInstance();
+	
+	@Test
+	public class ConnectionUtilTest {
+		
+	}
+}

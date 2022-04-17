@@ -59,6 +59,6 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", username=" + username + ", pass=" + pass + ", type=" + type + "]";
+		return "[USER] (id=" + id + ", username=" + username + ", pass=" + pass + ", type=" + type + "]";
 	}
 }

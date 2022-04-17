@@ -1,11 +1,15 @@
 package com.revature.project.one.apps;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.revature.project.one.handlers.EmployeeController;
 
 import io.javalin.Javalin;
 import io.javalin.http.staticfiles.Location;
 
 public class Main {
+	private static final Logger logger = LogManager.getLogger(Main.class);
 public static void main(String[] args) {
 	Javalin app = Javalin.create(ctx -> {
 		ctx.enableCorsForAllOrigins();
@@ -23,5 +27,6 @@ public static void main(String[] args) {
 	app.get("/fetchreim/{id}", EmployeeController.getReimbursementById);
 	app.put("/resolve", EmployeeController.resolveReimbursement);
 	
+	 logger.info("Solana has hosted successfully using Javalin.");
 }
 }

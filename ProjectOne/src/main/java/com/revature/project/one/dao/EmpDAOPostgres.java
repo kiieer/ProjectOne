@@ -8,11 +8,15 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.revature.project.one.apps.Main;
 import com.revature.project.one.entities.Employee;
 import com.revature.project.one.utils.ConnUtil;
 
 public class EmpDAOPostgres implements EmpDAO {
-	
+	private static final Logger logger = LogManager.getLogger(Main.class);
 	static Connection conn = ConnUtil.getInstance();
 	
 	@Override
@@ -35,12 +39,14 @@ public class EmpDAOPostgres implements EmpDAO {
 					localEmp.setUsername(eusername);
 					localEmp.setPass(epass);
 					localEmp.setType(type);
+					logger.info("EmpDAOPostgres.java method Login executed successfully.");
 					break;
 				}
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			logger.error("EmpDAOPostgres.java method Login failed.");
 		}
 		return localEmp;
 	}
@@ -61,11 +67,13 @@ public class EmpDAOPostgres implements EmpDAO {
 				String type = rs.getString("emptype");
 				e = new Employee(id, username, password, type);
 				eList.add(e);
+				
 			}
-			
+			logger.info("EmpDAOPostgres.java method getAllEmployees executed successfully.");
 		} catch (SQLException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
+			logger.error("EmpDAOPostgres.java getAllEmployees failed.");
 		}
 		
 		return eList;
@@ -89,10 +97,11 @@ public class EmpDAOPostgres implements EmpDAO {
 				e = new Employee(id, username, password, type);
 				eList.add(e);
 			}
-			
+			logger.info("EmpDAOPostgres.java method getEmployeeById executed successfully.");
 		} catch (SQLException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
+			logger.error("EmpDAOPostgres.java getEmployeeById failed.");
 		}
 		
 		return eList;

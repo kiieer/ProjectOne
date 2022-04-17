@@ -14,4 +14,6 @@ List<Reimbursement> getAllReimbursements();
 	boolean createReimbursement(Reimbursement reimbursement, int CUID);
 	
 	void resolveReimbursement(Reimbursement reimbursement, int CUID);
+
+	boolean deleteReimbursement(String type);
 }

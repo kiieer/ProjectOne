@@ -9,11 +9,15 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.revature.project.one.apps.Main;
 import com.revature.project.one.entities.Reimbursement;
 import com.revature.project.one.utils.ConnUtil;
 
 public class RemDAOPostgres implements RemDAO {
-	
+	private static final Logger logger = LogManager.getLogger(Main.class);
 	static Connection conn = ConnUtil.getInstance();
 	
 	
@@ -40,10 +44,11 @@ public class RemDAOPostgres implements RemDAO {
 				r = new Reimbursement(id, eid, mid, type, amount, desc, submittime, resolvetime, resolved, accepted);
 				rList.add(r);
 			}
-			
+			logger.info("RemDAOPostgres.java method getAllReimbursements executed successfully.");
 		} catch (SQLException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
+			logger.error("RemDAOPostgres.java method getAllReimbursements failed.");
 		}
 		
 		return rList;
@@ -59,10 +64,12 @@ public class RemDAOPostgres implements RemDAO {
 			ptsmt.setInt(3, reimbursement.getAmount());
 			ptsmt.setString(4, reimbursement.getDesc());
 			ptsmt.execute();
+			logger.info("RemDAOPostgres.java method createReimbursement executed successfully.");
 			return true;
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+				logger.error("RemDAOPostgres.java method createReimbursement failed.");
 				return false;
 			}
 	}
@@ -91,10 +98,11 @@ public class RemDAOPostgres implements RemDAO {
 				r = new Reimbursement(id, eid, mid, type, amount, desc, submittime, resolvetime, resolved, accepted);
 				rList.add(r);
 			}
-			
+			logger.info("RemDAOPostgres.java method getReimbursementById executed successfully.");
 		} catch (SQLException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
+			logger.error("RemDAOPostgres.java method getReimbursementByID failed.");
 		}
 		
 		return rList;
@@ -115,9 +123,11 @@ public class RemDAOPostgres implements RemDAO {
 			ptsmt.setInt(5, reimbursement.getId());
 			ptsmt.execute();
 			ptsmt.close();
+			logger.info("RemDAOPostgres.java method resolveReimbursement executed successfully.");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			logger.error("RemDAOPostgres.java method resolveReimbursement failed.");
 		}
 		
 	}
@@ -146,12 +156,29 @@ public class RemDAOPostgres implements RemDAO {
 				r = new Reimbursement(id, eid, mid, type, amount, desc, submittime, resolvetime, resolved, accepted);
 				rList.add(r);
 			}
-			
+			logger.info("RemDAOPostgres.java method getReimbursementsByEmployee executed successfully.");
 		} catch (SQLException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
+			logger.error("RemDAOPostgres.java method getReimbursementsByEmployee failed.");
 		}
 		
 		return rList;
+	}
+
+	@Override
+	public boolean deleteReimbursement(String type) {
+		// TODO Auto-generated method stub
+		try {
+			PreparedStatement ptsmt = conn.prepareStatement("delete from reimbursements where type = ?");
+			ptsmt.setString(1, type);
+			ptsmt.execute();
+			ptsmt.close();	
+			return true;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		}
 	}
 }

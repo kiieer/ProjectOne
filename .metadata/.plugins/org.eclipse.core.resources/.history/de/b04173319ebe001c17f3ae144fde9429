@@ -1,0 +1,22 @@
+package com.revature.project.one.daotests;
+
+import static org.mockito.Mockito.mock;
+
+import org.junit.jupiter.api.BeforeAll;
+
+import com.revature.project.one.dao.RemDAO;
+import com.revature.project.one.dao.RemDAOPostgres;
+import com.revature.project.one.entities.Reimbursement;
+
+public class ReimDAOTest {
+	private static RemDAO rdao;
+	private static Reimbursement globalReim;
+	
+	@BeforeAll
+	static void reset() {
+		rdao = mock(RemDAOPostgres.class);
+		globalReim = mock(Reimbursement.class);
+		
+	}
+	
+}
