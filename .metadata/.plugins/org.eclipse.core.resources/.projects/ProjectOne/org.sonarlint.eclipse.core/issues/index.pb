@@ -35,14 +35,10 @@ _
 /src/main/resources/web/scripts/reimbursement.js,b\6\b6edd9be5b212547678bbfe24ca3d971a87f6b04
 k
 ;src/main/java/com/revature/project/one/utils/LoginUtil.java,6\4\64b6f3b5a5a8b6b2a1827361b0cdaf33a7a03b69
-Z
-*src/main/resources/web/scripts/employee.js,0\d\0d26f0c101ca9550cb81c0df11b27c379c1313f2
 q
 Asrc/main/java/com/revature/project/one/service/EmpSInterface.java,9\0\903c3fc7b959b981e430320e66f34da6416ea700
 Q
 !src/main/resources/web/rimbm.html,0\6\065530edd4a1c1289471f8a782888fca8cff4bc8
-Y
-)src/main/resources/web/scripts/manager.js,1\4\1499388ea7ee09239fe9ed191f741a1ded01db15
 r
 Bsrc/main/java/com/revature/project/one/entities/Reimbursement.java,f\6\f697fda4d500383595275b87809478ad2934d4f3
 T

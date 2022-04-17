@@ -103,8 +103,8 @@ function managereim(id) {
     `<input id="reimid" class = "create" type="text" placeholder="enter reimbursement id..." name="reimid" disabled value="${id}">` +
 	  '<label class="bottom">Manage: &nbsp; </label><br>' +
 	  '<select id="booleanmanage">' +
-	    '<option value="true">accept</option>' +
-	    '<option value="false">reject</option>' +
+	    '<option>true</option>' +
+	    '<option>false</option>' +
 	 ' </select></p>' +
     '<button type="submit" id="loginbtn">Submit</button></form>';
     console.log("test");
