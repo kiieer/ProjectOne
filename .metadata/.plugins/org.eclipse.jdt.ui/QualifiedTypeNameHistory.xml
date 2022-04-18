@@ -8,7 +8,6 @@
     <fullyQualifiedTypeName name="com.revature.pctc.handlers.EmployeeController"/>
     <fullyQualifiedTypeName name="com.revature.project.one.entities.Employee"/>
     <fullyQualifiedTypeName name="org.eclipse.jetty.client.api.Connection"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="com.revature.project.one.dao.EmpDAO"/>
@@ -23,13 +22,23 @@
     <fullyQualifiedTypeName name="com.revature.project.one.utils.LoginUtil"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="com.revature.project.one.entities.Reimbursement"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="io.opentelemetry.exporter.logging.SystemOutLogExporter"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-    <fullyQualifiedTypeName name="com.revature.project.one.dao.RemDAO"/>
-    <fullyQualifiedTypeName name="com.revature.project.one.dao.RemDAOPostgres"/>
     <fullyQualifiedTypeName name="com.revature.project.one.service.RemSInterface"/>
     <fullyQualifiedTypeName name="com.revature.project.one.service.RemService"/>
+    <fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
+    <fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
+    <fullyQualifiedTypeName name="com.revature.project.one.dao.RemDAO"/>
+    <fullyQualifiedTypeName name="com.revature.project.one.dao.RemDAOPostgres"/>
+    <fullyQualifiedTypeName name="com.revature.project.one.entities.Reimbursement"/>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeAll"/>
+    <fullyQualifiedTypeName name="org.mockito.InjectMocks"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Assertions"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.TestMethodOrder"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.AfterAll"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
 </qualifiedTypeNameHistroy>

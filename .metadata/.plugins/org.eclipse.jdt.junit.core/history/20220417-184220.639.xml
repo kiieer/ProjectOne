@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="ReimDAOTest" project="ProjectOne" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.revature.project.one.daotests.ReimDAOTest" time="0.077" displayname="ReimDAOTest" uniqueid="[engine:junit-jupiter]/[class:com.revature.project.one.daotests.ReimDAOTest]">
-    <testcase name="createReimbursementTest" classname="com.revature.project.one.daotests.ReimDAOTest" time="0.077" displayname="createReimbursementTest()" uniqueid="[engine:junit-jupiter]/[class:com.revature.project.one.daotests.ReimDAOTest]/[method:createReimbursementTest()]"/>
-  </testsuite>
-</testrun>

@@ -12,4 +12,3 @@ Scenario Outline: Successful Login with Valid Credentials using Scenario
     | emp | emp |
     | emp1 | 123 |
     | admin | admin |
-    

@@ -16,6 +16,16 @@ public static void main(String[] args) {
 		ctx.addStaticFiles("web", Location.CLASSPATH);}
 	).start();
 	
+	
+	/* Thank you for taking the time to check me out!
+	 * This is my Project One, affectionately named Solana. 
+	 * Solana is not real, it is a false company I developed for the 
+	 * purpose of design. It was made utilizing all of the tools our 
+	 * batch has learned over the past couple of amazing weeks with Revature.
+	 * Have a good one,
+	 * Kiersten Christlieb
+	 */
+	
 	app.before(ctx -> ctx.header("Access-Control-Allow-Credentials", "true"));
 
 	app.post("/login", EmployeeController.login);

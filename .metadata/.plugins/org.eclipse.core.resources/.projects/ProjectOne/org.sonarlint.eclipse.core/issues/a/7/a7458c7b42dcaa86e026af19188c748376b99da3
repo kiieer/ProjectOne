@@ -1,37 +1,40 @@
 
-}
-java:S20957"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(äŸ§8ãŠÎå‚0H HRBLOCKERZBUG
 i
-java:S1135L"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ãŠÎå‚0H¡HRINFOZ
-CODE_SMELL
-Œ
-java:S22934"YReplace the type specification in this constructor call with the diamond operator ("<>").(æ«é¾8©Ù‘‚0H¢HRMINORZ
-CODE_SMELL
-
-java:S1192"IDefine a constant instead of duplicating this literal "username" 3 times.(ê­¯8ãŠÎå‚0H¤HRCRITICALZ
-CODE_SMELL
-i
-java:S1135*"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8©Ù‘‚0H¨HRINFOZ
-CODE_SMELL
-Œ
-java:S2293N"YReplace the type specification in this constructor call with the diamond operator ("<>").(æ«é¾8ãŠÎå‚0H©HRMINORZ
+java:S1135J"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ãŠÎå‚0HˆIRINFOZ
 CODE_SMELL
 b
-java:S1135C"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿH«HRINFOZ
+java:S1135T"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿHÿHRINFOZ
 CODE_SMELL
-b
-java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿH¬HRINFOZ
+c
+java:S3416"1Update this logger to use "EmpDAOPostgres.class".(åñˆs8Ê°¿ƒ0HİIRMINORZ
+CODE_SMELL
+i
+java:S11358"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ãŠÎå‚0HşHRINFOZ
+CODE_SMELL
+Œ
+java:S2293:"YReplace the type specification in this constructor call with the diamond operator ("<>").(æ«é¾8ãŠÎå‚0H€IRMINORZ
 CODE_SMELL
 v
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(öœÀH­HRBLOCKERZBUG
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(öœÀH‡IRBLOCKERZBUG
+Œ
+java:S2293V"YReplace the type specification in this constructor call with the diamond operator ("<>").(æ«é¾8©Ù‘‚0H‰IRMINORZ
+CODE_SMELL
 i
-java:S1135^"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ãŠÎå‚0H®HRINFOZ
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ÕËÒ‚0HüHRINFOZ
 CODE_SMELL
 }
-java:S2095Q"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(äŸ§8©Ù‘‚0H¯HRBLOCKERZBUG
+java:S2095="OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(äŸ§8ãŠÎå‚0HIRBLOCKERZBUG
+}
+java:S2095Y"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(äŸ§8©Ù‘‚0H†IRBLOCKERZBUG
 i
-java:S11352"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ÕËÒ‚0H°HRINFOZ
+java:S1135f"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8©Ù‘‚0H‹IRINFOZ
+CODE_SMELL
+b
+java:S1135/"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿHıHRINFOZ
 CODE_SMELL
 ~
-java:S1192 "HDefine a constant instead of duplicating this literal "emptype" 3 times.(îÂ¢Ê8ãŠÎå‚0H±HRCRITICALZ
+java:S1192$"HDefine a constant instead of duplicating this literal "emptype" 3 times.(îÂ¢Ê8ãŠÎå‚0H‚IRCRITICALZ
+CODE_SMELL
+
+java:S1192#"IDefine a constant instead of duplicating this literal "username" 3 times.(ê­¯8ãŠÎå‚0HŒIRCRITICALZ
 CODE_SMELL

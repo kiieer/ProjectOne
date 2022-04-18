@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="ConnUtilTest" project="ProjectOne" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.revature.project.one.utiltests.ConnUtilTest" time="0.029" displayname="ConnUtilTest" uniqueid="[engine:junit-jupiter]/[class:com.revature.project.one.utiltests.ConnUtilTest]">
-    <testcase name="ConnectionUtilTest" classname="com.revature.project.one.utiltests.ConnUtilTest" time="0.029" displayname="ConnectionUtilTest()" uniqueid="[engine:junit-jupiter]/[class:com.revature.project.one.utiltests.ConnUtilTest]/[method:ConnectionUtilTest()]"/>
-  </testsuite>
-</testrun>
