@@ -1,0 +1,16 @@
+Feature: Create Action
+
+#Scenario: Successful Login with Valid Credentials
+Scenario Outline: Successful Creation with Valid Credentials using Scenario
+    Given User is on Home Page
+    When User Navigate to Create Page
+    #And User enters UserName and Password
+    #And User enters "testuser" and "Password@123"
+   	And User enters "<type>" and "<amount>" and "<description>"
+
+    Then Message displayed Creation Successful
+    
+    Examples:
+    | type  | amount | description |
+    | food | 300 | automation event catering |
+    
