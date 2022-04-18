@@ -29,7 +29,8 @@ function getEmpReimbursements (){
     .catch(err => console.log('Request Failed', err)); // Catch errors
 }
 
-function displayEmpData(response) {
+function displayEmpData(fetched) {
+response = fetched.reverse();
 var len = response.length;
 const table = document.getElementById("testtable");
 
@@ -90,11 +91,12 @@ function getAllReimbursements (){
     .catch(err => console.log('Request Failed', err)); // Catch errors
 }
 
-function displayAllData(response) {
+function displayAllData(fetched) {
+response = fetched.reverse();
 var len = response.length;
 const table = document.getElementById("testtable");
 
-for (var i=0; i < len; i++) {
+for (var i= 0; i < len; i++) {
 	
     var tr = document.createElement('tr');
     var s = response[i];
