@@ -1,18 +1,13 @@
 package com.revature.project.one.daotests;
 
-
-
 import static org.mockito.ArgumentMatchers.isA;
 import static org.mockito.Mockito.doCallRealMethod;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-import java.sql.SQLException;
-
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
@@ -50,5 +45,4 @@ public class ReimDAOTest {
 	    dao.resolveReimbursement(r1, 2);
 	    verify(dao, times(1)).resolveReimbursement(r1, 2);
 	}
-	
 }

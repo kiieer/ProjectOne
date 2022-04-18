@@ -1,38 +1,38 @@
 
+Y
+java:S11253"'Remove the unnecessary boolean literal.(„îÆ
+8Í±¿Ğƒ0HñMRMINORZ
+CODE_SMELL
+k	java:S1066"9Replace this use of System.out or System.err by a logger.(ë’Ó8Í±¿Ğƒ0HóMRMAJORZ
+CODE_SMELL
+x	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŠ¶YHôMRMINORZ
+CODE_SMELL
 ]
-java:S1444",Make this "public static driver" field final(ÜçÁÈûÿÿÿÿH‰MRMINORZ
+java:S1444",Make this "public static driver" field final(ÜçÁÈûÿÿÿÿHõMRMINORZ
 CODE_SMELL
-e
-java:S2696"6Make the enclosing method "static" or remove this set.(Î°¸óHúLRCRITICALZ
+d	java:S106"9Replace this use of System.out or System.err by a logger.(üãäHöMRMAJORZ
 CODE_SMELL
-i
-java:S1874#"6Remove this use of "implicitlyWait"; it is deprecated.(¢ĞÁí8“ºĞƒ0H´MRMINORZ
+ƒ
+java:S1104"RMake driver a static final constant or non-public and provide accessors if needed.(ÜçÁÈûÿÿÿÿH÷MRMINORZ
 CODE_SMELL
 \
 java:S54113"*Use the primitive boolean expression here.(„îÆ
-8Í±¿Ğƒ0HÁMRMINORZ
+8Í±¿Ğƒ0HøMRMINORZ
 CODE_SMELL
-Y
-java:S11253"'Remove the unnecessary boolean literal.(„îÆ
-8Í±¿Ğƒ0H¾MRMINORZ
+y	java:S100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿£ÇÊHûMRMINORZ
+CODE_SMELL
+e
+java:S2696"6Make the enclosing method "static" or remove this set.(Î°¸óHüMRCRITICALZ
 CODE_SMELL
 i
-java:S1874."6Remove this use of "implicitlyWait"; it is deprecated.(¢ĞÁí8ÖÇĞƒ0HİMRMINORZ
+java:S1874#"6Remove this use of "implicitlyWait"; it is deprecated.(¢ĞÁí8“ºĞƒ0HıMRMINORZ
 CODE_SMELL
-x	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁŠ¶YHùLRMINORZ
+i
+java:S1874."6Remove this use of "implicitlyWait"; it is deprecated.(¢ĞÁí8ÖÇĞƒ0HşMRMINORZ
 CODE_SMELL
-ƒ
-java:S1104"RMake driver a static final constant or non-public and provide accessors if needed.(ÜçÁÈûÿÿÿÿHˆMRMINORZ
+~	java:S100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³¶…ÒøÿÿÿÿHÿMRMINORZ
 CODE_SMELL
-k	java:S1066"9Replace this use of System.out or System.err by a logger.(ë’Ó8Í±¿Ğƒ0HÀMRMAJORZ
+~	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É£ışÿÿÿÿH€NRMINORZ
 CODE_SMELL
-~	java:S100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³¶…ÒøÿÿÿÿH†MRMINORZ
-CODE_SMELL
-~	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É£ışÿÿÿÿHûLRMINORZ
-CODE_SMELL
-d	java:S106"9Replace this use of System.out or System.err by a logger.(üãäH‡MRMAJORZ
-CODE_SMELL
-i	java:S1064"9Replace this use of System.out or System.err by a logger.(Ì‡×—üÿÿÿÿH¶MRMAJORZ
-CODE_SMELL
-y	java:S100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿£ÇÊHıLRMINORZ
+i	java:S1064"9Replace this use of System.out or System.err by a logger.(Ì‡×—üÿÿÿÿHNRMAJORZ
 CODE_SMELL
