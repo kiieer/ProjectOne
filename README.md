@@ -17,6 +17,7 @@ Please note that Solana is not a genuine company and that the art assets present
 - **SQL**, *Postgres version 42.3.1*
 - **Apache Maven**, *version 3.8.4*
 - **HTML / JavaScript / CSS**
+- **JDBC**
 
 ## Characteristics
 This section represents the list of features that are currently present as well as the features I plan to implement in future development.
@@ -40,3 +41,14 @@ This section represents the list of features that are currently present as well 
 
 ## Getting Started With Solana
 
+### Cloning My Repository
+- Open up GitBash and change to the current working directory you would like to clone Solana.
+- Input `$ git clone https://github.com/kiieer/ProjectOne.git` and press enter to create a clone.
+
+### Database Set-up and Manipulation
+- Under `ProjectOne/ProjectOne/src/main/resources/misc/` there is a file known as `data.sql`. Running this code, you should be able to create the respective database that is used in Solana. We are using Postgres.
+- There are two insert commands within `data.sql` that you can use to generate an employee and manager, you can optionally alter these statements or keep these preset users.
+- Under `ProjectOne/ProjectOne/src/main/java/com/revature/project/one/utils/` there is a class called `ConnUtil.java`. There is a variable on `line 10`, `PROJ_ONE`, that you should change to fit your database needs. [A useful tutorial of how to do this on JavaCodeGeeks.com.](https://examples.javacodegeeks.com/core-java/sql/java-jdbc-postgresql-connection-example/)
+
+### Running Javalin and Accessing Solana
+- 
