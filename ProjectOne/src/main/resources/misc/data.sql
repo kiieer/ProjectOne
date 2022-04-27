@@ -14,3 +14,6 @@ resolved boolean,
 accepted boolean,
 foreign key (emp_id) references employees(id)
 );
+
+INSERT into employees (username, pass, emptype) values('man1', 'man1', 'manager');
+INSERT into employees (username, pass, emptype) values('emp1', 'emp1', 'employee');
