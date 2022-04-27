@@ -22,7 +22,7 @@ Please note that Solana is not a genuine company and that the art assets present
 ## Characteristics
 This section represents the list of features that are currently present as well as the features I plan to implement in future development.
 
-### Features
+### Implemented Features
  - An employee can login with their correct company-assigned incredentials.
  - An employee can review all of their current and previously submitted reimbursements.
  - An employee can submit a brand new reimbursement.
@@ -32,7 +32,7 @@ This section represents the list of features that are currently present as well 
  - A manager can approve or deny the reimbursement they are previewing.
  - A manager can edit the previous decision on a resolved reimbursement.
  
- ### To-do List
+ ### Features in Development
  - An employee can register with their own respective username and password to be in a 'pending' state in the database.
  - A manager can see all of the pending registrations and can approve or deny their access.
  - A manager can restrict active employees to return them to the pending status.
@@ -50,5 +50,11 @@ This section represents the list of features that are currently present as well 
 - There are two insert commands within `data.sql` that you can use to generate an employee and manager, you can optionally alter these statements or keep these preset users.
 - Under `ProjectOne/ProjectOne/src/main/java/com/revature/project/one/utils/` there is a class called `ConnUtil.java`. There is a variable on `line 10`, `PROJ_ONE`, that you should change to fit your database needs. [A useful tutorial of how to do this on JavaCodeGeeks.com.](https://examples.javacodegeeks.com/core-java/sql/java-jdbc-postgresql-connection-example/)
 
-### Running Javalin and Accessing Solana
-- 
+### Running Javalin
+We will be using Spring Tool Suite for this guide, but your mileage may vary on other IDEs.
+- Under `ProjectOne/ProjectOne/src/main/java/com/revature/project/one/apps/` there is a Java class called `Main.java`. This is the class you will be running to start Solana.
+- Running this as a Java Application will start Javalin. By default, it will start on `http://localhost:8080/`. However, if you currently have something running on port 8080 you can change the port you are using on line 17 in `Main.java`. For example, `start(7070);`
+
+## Usage
+- After following all of the steps above with getting started with Solana, you should be able to access Solana on your respective localhost by opening `http://localhost:[port]/`with `[port]` representing the port you have assigned. Remember, by default Javalin will be listening on `8080`.
+- Now, you can demostrate every feature listed in [Characteristics](https://github.com/kiieer/ProjectOne#characteristics) using the users you defined in your database set up.
